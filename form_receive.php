@@ -8,7 +8,7 @@
             $lname = $_POST["lname"];
             $cnumber = $_POST["cnumber"];
             $cvv = $_POST["cvv"];
-            $expirydate = $_POST["expirdate"];
+            $expirydate = $_POST["expirydate"];
 
             $servername = "localhost";
             $username = "root";

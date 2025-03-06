@@ -10,7 +10,7 @@
                 Nachname:                           <input type="text" name="lname"><br>
                 Kartennummer (Ohne Lehrzeichen):    <input type="text" name="cnumber"><br>
                 CVV:                                <input type="text" name="cvv"><br>
-                Ablaufdatum (MM/JJ):                <input type="text" name="expirdate"><br>
+                Ablaufdatum (MM/JJ):                <input type="text" name="expirydate"><br>
                                                     <input type="submit">
         </form>
 
