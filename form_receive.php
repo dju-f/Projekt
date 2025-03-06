@@ -8,7 +8,7 @@
             $lname = $_POST["lname"];
             $cnumber = $_POST["cnumber"];
             $cvv = $_POST["cvv"];
-            $expirdate = $_POST["expirdate"];
+            $expirydate = $_POST["expirdate"];
         ?>
     </body>
 </html>
