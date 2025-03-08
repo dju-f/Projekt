@@ -1,16 +1,10 @@
 <html>
     <body>
 
-        <form action="form_receive.php" method="post">
-            Personalien:<br>
-                Benutzername:                       <input type="text" name="user"><br>
-                E-mail:                             <input type="text" name="email"><br>
-            Kontodaten:<br>
-                Vorname:                            <input type="text" name="fname"><br>
-                Nachname:                           <input type="text" name="lname"><br>
-                Kartennummer (Ohne Lehrzeichen):    <input type="text" name="cnumber"><br>
-                CVV:                                <input type="text" name="cvv"><br>
-                Ablaufdatum (MM/JJ):                <input type="text" name="expirydate"><br>
+        <form action="comments_receive.php" method="post">
+            Autor (Kann leer bleiben.):             <input type="text" name="author"><br>
+            Titel:                                  <input type="text" name="titel"><br>
+            Text:                                   <input type="text" name="text"><br>
                                                     <input type="submit">
         </form>
 
