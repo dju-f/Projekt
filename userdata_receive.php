@@ -16,7 +16,7 @@
             include("connection.php");
             
             $sql = "INSERT INTO user (user_username, user_email, bank_cardholder, bank_cardnumber, bank_cvv, bank_expdate)
-              VALUES ("$user", "$email", "$name", "$cnumber", "$cvv", "$expirydate");
+              VALUES ('$user', '$email', '$name', '$cnumber', '$cvv', '$expirydate');
             
             try{
               mysqli_query($conn, $sql);
