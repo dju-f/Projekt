@@ -7,11 +7,6 @@
             $cnumber = $_POST["cnumber"];
             $cvv = $_POST["cvv"];
             $expirydate = $_POST["expirydate"];
-
-            $servername = "localhost";
-            $username = "root";
-            $password = "";
-            $dbname = "Conspiracy_web";
             
             include("connection.php");
             
