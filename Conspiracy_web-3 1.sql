@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Datenbank: `Conspiracy.web`
+-- Datenbank: `conspiracy.web`
 --
 
 -- --------------------------------------------------------
@@ -40,7 +40,7 @@ CREATE TABLE `articles` (
 -- Tabellenstruktur für Tabelle `Forum`
 --
 
-CREATE TABLE `Forum` (
+CREATE TABLE `forum` (
   `forum_author` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT 'Anonym',
   `forum_title` varchar(64) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `forum_text` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL
@@ -52,7 +52,7 @@ CREATE TABLE `Forum` (
 -- Tabellenstruktur für Tabelle `Produkts`
 --
 
-CREATE TABLE `Produkts` (
+CREATE TABLE `products` (
   `prod_id` int NOT NULL,
   `prod_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `prod_image` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
