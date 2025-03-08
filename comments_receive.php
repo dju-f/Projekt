@@ -5,11 +5,15 @@
             $title = $_POST["title"];
             $text = $_POST["text"];
             
+            if ($author == "") {
+                $author = "Anonym";
+            }
+
             include("connection.php");
             
             mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
-            $sql = "INSERT INTO user (forum_author, forum_title, forum_text)
+            $sql = "INSERT INTO forum (forum_author, forum_title, forum_text)
               VALUES ('$author', '$title', '$text')";
 
             try {
