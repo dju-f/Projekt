@@ -1,7 +1,7 @@
 <html>
     <body>
 
-        <form action="form_receive.php" method="post">
+        <form action="userdata_receive.php" method="post">
             Personalien:<br>
                 Benutzername:                       <input type="text" name="user"><br>
                 E-mail:                             <input type="text" name="email"><br>
