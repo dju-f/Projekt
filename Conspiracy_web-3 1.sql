@@ -37,7 +37,7 @@ CREATE TABLE `articles` (
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `Forum`
+-- Tabellenstruktur für Tabelle `forum`
 --
 
 CREATE TABLE `forum` (
@@ -49,7 +49,7 @@ CREATE TABLE `forum` (
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `Produkts`
+-- Tabellenstruktur für Tabelle `products`
 --
 
 CREATE TABLE `products` (
