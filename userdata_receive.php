@@ -22,7 +22,8 @@
 
             try {
                 mysqli_query($conn, $sql);
-            } catch (mysqli_sql_exception $e) {
+            } 
+            catch (mysqli_sql_exception $e) {
                 echo "Verbindung zum Server fehlgeschlagen!" . $e->getMessage();
             }
 
