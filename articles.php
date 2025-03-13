@@ -2,7 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
-        <title>Produkte</title>
+        <title>Web-Artikel</title>
     </head>
     <body>
         <ul>
@@ -19,11 +19,11 @@
         $result = mysqli_query($conn, $sql);
         if(mysqli_num_rows($result) > 0) {
             while($row = mysqli_fetch_assoc($result)){
-                echo "hallo";
-                echo $row["article_title"];
-                echo $row["article_subtitle"];
-                echo $row["article_image"];
-                echo $row["article_text"];
+                echo "<div class=\"product_list_item\">";
+                echo "<img src=\"" . $row["article_image"] . "\"/>";
+                echo "<h1>" . $row["article_title"] . "</h1>";
+                echo "<p class=\"product_list_item_description\">" . $row["article_subtitle"] . "</p>";
+                echo "</div>";
             };
         }
         else{
