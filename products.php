@@ -23,6 +23,7 @@
                 echo "<h1>" . $row["prod_name"] . "</h1>";
                 echo "<p class=\"product_list_item_description\">" . $row["prod_shorttext"] . "</p>";
                 echo "<p class=\"price_tag\">CHF <br> " . $row["prod_price"] . "</p>";
+                echo "link: <a href=product.php?id=".$row["prod_id"].">juhu</a>";
                 echo "</div>";
 
             };

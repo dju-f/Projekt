@@ -1,7 +1,7 @@
 <?php
     $dbserver = "localhost";
     $dbuser = "root";
-    $dbpass = "";
+    $dbpass = "root";
     $dbname = "conspiracy_web";
     $conn = "";
 

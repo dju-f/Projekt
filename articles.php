@@ -11,7 +11,7 @@
             <li><a class="navigation_bar" href="products.php">PRODUKTE</a></li>
             <li><a class="navigation_bar" href="forum.php">FORUM</a></li>    
         </ul> 
-        <?php
+<?php
 
     include("connection.php");
 
@@ -23,6 +23,7 @@
                 echo "<img src=\"" . $row["article_image"] . "\"/>";
                 echo "<h1>" . $row["article_title"] . "</h1>";
                 echo "<p class=\"product_list_item_description\">" . $row["article_subtitle"] . "</p>";
+                echo "link: <a href=article.php?id=".$row["article_id"].">juhu</a>";
                 echo "</div>";
             };
         }
