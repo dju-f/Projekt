@@ -64,10 +64,10 @@ CREATE TABLE `products` (
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `User`
+-- Tabellenstruktur für Tabelle `user`
 --
 
-CREATE TABLE `User` (
+CREATE TABLE `user` (
   `user_id` int NOT NULL,
   `user_username` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `user_email` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
@@ -83,15 +83,15 @@ CREATE TABLE `User` (
 --
 
 --
--- Indizes für die Tabelle `Produkts`
+-- Indizes für die Tabelle `products`
 --
-ALTER TABLE `Produkts`
+ALTER TABLE `products`
   ADD PRIMARY KEY (`prod_id`);
 
 --
--- Indizes für die Tabelle `User`
+-- Indizes für die Tabelle `user`
 --
-ALTER TABLE `User`
+ALTER TABLE `user`
   ADD PRIMARY KEY (`user_id`);
 
 --
@@ -99,15 +99,15 @@ ALTER TABLE `User`
 --
 
 --
--- AUTO_INCREMENT für Tabelle `Produkts`
+-- AUTO_INCREMENT für Tabelle `products`
 --
-ALTER TABLE `Produkts`
+ALTER TABLE `products`
   MODIFY `prod_id` int NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT für Tabelle `User`
+-- AUTO_INCREMENT für Tabelle `user`
 --
-ALTER TABLE `User`
+ALTER TABLE `user`
   MODIFY `user_id` int NOT NULL AUTO_INCREMENT;
 COMMIT;
 
