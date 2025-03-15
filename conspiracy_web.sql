@@ -58,7 +58,7 @@ CREATE TABLE `products` (
   `prod_name` varchar(255) NOT NULL,
   `prod_image` varchar(255) NOT NULL,
   `prod_shorttext` varchar(255) NOT NULL,
-  `prod_longtext` varchar(255) NOT NULL,
+  `prod_longtext` text NOT NULL,
   `prod_price` varchar(8) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
