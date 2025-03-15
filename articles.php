@@ -19,12 +19,14 @@
         $result = mysqli_query($conn, $sql);
         if(mysqli_num_rows($result) > 0) {
             while($row = mysqli_fetch_assoc($result)){
+                echo "<a href=article.php?id=".$row["article_id"]." class=\"clickable_div\" style=\"all: unset; cursor: pointer;\">";
                 echo "<div class=\"product_list_item\">";
                 echo "<img src=\"" . $row["article_image"] . "\"/>";
                 echo "<h1>" . $row["article_title"] . "</h1>";
                 echo "<p class=\"product_list_item_description\">" . $row["article_subtitle"] . "</p>";
-                echo "link: <a href=article.php?id=".$row["article_id"].">juhu</a>";
+                // echo "<a href=google.com class=\"clickable_div\"></a>";
                 echo "</div>";
+                echo "</a>";
             };
         }
         else{

@@ -125,8 +125,25 @@ div.product_list_item p.price_tag{
     font-size: 24px;
     align-content: center;
     text-align: center;
-
 }
+a.clickable_div:hover{
+    border: 25px solid rgb(129, 224, 145);
+    z-index: 10;
+}
+/* a.clickable_div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    z-index: 10;
+    background-color: white;
+    opacity: 0;
+    filter: alpha(opacity=1);
+} */
+
+
 
 /* div.article_list_item{
     display:grid;

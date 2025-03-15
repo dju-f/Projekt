@@ -18,13 +18,15 @@
         $result = mysqli_query($conn, $sql);
         if(mysqli_num_rows($result) > 0) {
             while($row = mysqli_fetch_assoc($result)){
+                echo "<a href=product.php?id=".$row["prod_id"]." class=\"clickable_div\" style=\"all: unset; cursor: pointer;\">";
                 echo "<div class=\"product_list_item\">";
                 echo "<img src=\"" . $row["prod_image"] . "\"/>";
                 echo "<h1>" . $row["prod_name"] . "</h1>";
                 echo "<p class=\"product_list_item_description\">" . $row["prod_shorttext"] . "</p>";
                 echo "<p class=\"price_tag\">CHF <br> " . $row["prod_price"] . "</p>";
-                echo "link: <a href=product.php?id=".$row["prod_id"].">juhu</a>";
+                // echo "link: <a href=product.php?id=".$row["prod_id"].">juhu</a>";
                 echo "</div>";
+                echo "</a>";
 
             };
         }
