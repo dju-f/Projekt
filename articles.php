@@ -11,6 +11,7 @@
             <li><a class="navigation_bar" href="products.php">PRODUKTE</a></li>
             <li><a class="navigation_bar" href="forum.php">FORUM</a></li>    
         </ul> 
+    </
 <?php
 
     include("connection.php");
