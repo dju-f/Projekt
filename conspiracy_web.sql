@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 15, 2025 at 05:24 PM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- Erstellungszeit: 15. Mrz 2025 um 19:08
+-- Server-Version: 10.4.32-MariaDB
+-- PHP-Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `conspiracy_web`
+-- Datenbank: `conspiracy_web`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `articles`
+-- Tabellenstruktur für Tabelle `articles`
 --
 
 CREATE TABLE `articles` (
@@ -36,7 +36,7 @@ CREATE TABLE `articles` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `articles`
+-- Daten für Tabelle `articles`
 --
 
 INSERT INTO `articles` (`article_id`, `article_title`, `article_subtitle`, `article_image`, `article_text`) VALUES
@@ -49,7 +49,7 @@ INSERT INTO `articles` (`article_id`, `article_title`, `article_subtitle`, `arti
 -- --------------------------------------------------------
 
 --
--- Table structure for table `forum`
+-- Tabellenstruktur für Tabelle `forum`
 --
 
 CREATE TABLE `forum` (
@@ -58,10 +58,46 @@ CREATE TABLE `forum` (
   `forum_text` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Daten für Tabelle `forum`
+--
+
+INSERT INTO `forum` (`forum_author`, `forum_title`, `forum_text`) VALUES
+('FlacheWahrheit77', 'Die große Lüge', 'Leute, die Erde ist flach! Warum sieht man nie eine echte Krümmung, egal wie hoch man steigt?'),
+('Wahrheitsfinder88', 'NASA – die Meister der Täuschung', 'Genau! Die NASA lügt seit Jahrzehnten. Die ganzen „Weltraum“-Bilder sind gefälscht!'),
+('Skeptiker1984', '', 'Warum sollte man das verheimlichen? Was hätten „sie“ davon?'),
+('Nachdenker90', '', 'Also ganz ehrlich, wenn die Erde flach wäre, müsste es doch irgendwo einen Rand geben. Warum ist den noch niemand drübergefallen?'),
+('FlacheWahrheit77', 'Kontrolle über dein Denken', 'Weil sie nicht wollen, dass wir die Wahrheit erkennen. Sie wollen uns kleinhalten – als bedeutungslosen Punkt in einem erfundenen Universum.'),
+('HinterfragAlles', 'Verbotene Gebiete', 'Vielleicht gibt es mehr Land, das sie uns verheimlichen? Die Antarktis könnte eine Barriere sein!'),
+('ErdkernRebell', '', 'Oder ein Eingang! Admiral Byrd hat eine riesige, warme Welt gesehen – das ist dokumentiert!'),
+('RealDenkerX', 'Warum ist die Antarktis tabu?', 'Und warum ist es so schwer, eine private Reise dorthin zu machen? Weil die UN das Gebiet kontrolliert!'),
+('Nachdenker90', '', 'Aber das ergibt doch keinen Sinn. Wenn da wirklich etwas wäre, könnte man doch mit Drohnen oder Satelliten nachsehen?'),
+('FlacheWahrheit77', '', 'Die Antarktis könnte der Rand der flachen Erde sein. Vielleicht liegt dahinter noch mehr Land!'),
+('Wahrheitsfinder88', 'Die geheime Elite', 'Und vielleicht lebt dort die wahre Macht der Welt – verborgen vor unseren Augen.'),
+('Anonym', 'CERN spielt Gott', 'Und vielleicht benutzen sie CERN, um Portale zu öffnen – in ihre Welt oder in andere Dimensionen.'),
+('Anonym', '2012', '2012 hat sich doch alles verändert. Vielleicht haben sie damals etwas geöffnet?'),
+('Nachdenker90', '', 'Ich erinnere mich, dass 2012 alle über den Maya-Kalender geredet haben. Aber passiert ist doch nichts, oder?'),
+('Anonym', 'Unwirkliche Realität', 'Die Welt fühlt sich seitdem auch seltsam „verschoben“ an.'),
+('5G-Gegner23', '', 'Und seitdem ging der Ausbau von 5G rasant voran. Zufall?'),
+('SchlafschafNeinDanke', 'Strahlung als Waffe', '5G ist keine normale Technologie. Es beeinflusst unser Bewusstsein!\r\nNachdenker90: Leute, 5G ist einfach eine schnellere Mobilfunktechnik. Warum sollte das unser Bewusstsein beeinflussen?'),
+('RealDenkerX', 'Nano-Gifte in der Luft', 'Genau! Die Nanopartikel in der Luft interagieren mit der Strahlung.\r\nSkeptiker1984: Das ist doch Unsinn. Habt ihr dafür Beweise?'),
+('Wahrheitsfinder88', 'Wissen wird unterdrückt!', 'Beweise gibt es genug, aber sie werden gelöscht oder als „Fake News“ bezeichnet.'),
+('5G-Gegner23', '', 'Ist doch auffällig, dass Menschen immer kränker werden, seit 5G aktiv ist!'),
+('Skeptiker1984', '', 'Krankheiten gab es doch schon immer. Ist das nicht ein bisschen weit hergeholt?'),
+('HinterfragAlles', 'Zusammenhänge sehen!', 'Genau. Und das fiel exakt mit der Pandemie zusammen.'),
+('Patriot2020', 'Die Ablenkungstaktik', 'Covid war ein Ablenkungsmanöver! Währenddessen haben sie 5G still und heimlich überall installiert.'),
+('Anonym', 'Gefälschte US-Wahl', 'Und nebenbei haben sie die US-Wahl manipuliert!'),
+('Nachdenker90', '', 'Die Wahl war manipuliert, weil dein Kandidat verloren hat? Ist das nicht etwas zu einfach gedacht?'),
+('Skeptiker1984', '', 'Genau, ihr wollt es einfach nicht wahr haben!'),
+('Patriot2020', 'Trump gegen den Deep State', 'Trump war eine Bedrohung für die globale Elite. Deshalb musste er weg.'),
+('DimensionenSprung', 'Hat Trump das Geheimnis gekannt?', 'Vielleicht wusste er zu viel und wollte etwas enthüllen?'),
+('Anonym', 'Wie Kennedy', 'Genau wie Kennedy! Wer zu viel gegen das System unternimmt, wird beseitigt.'),
+('RealDenkerX', 'Es ist noch nicht vorbei!', 'Aber Trump gibt nicht auf. Wartet nur ab!\r\n ');
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `products`
+-- Tabellenstruktur für Tabelle `products`
 --
 
 CREATE TABLE `products` (
@@ -74,7 +110,7 @@ CREATE TABLE `products` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `products`
+-- Daten für Tabelle `products`
 --
 
 INSERT INTO `products` (`prod_id`, `prod_name`, `prod_image`, `prod_shorttext`, `prod_longtext`, `prod_price`) VALUES
@@ -87,7 +123,7 @@ INSERT INTO `products` (`prod_id`, `prod_name`, `prod_image`, `prod_shorttext`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Tabellenstruktur für Tabelle `user`
 --
 
 CREATE TABLE `user` (
@@ -102,45 +138,45 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Indexes for dumped tables
+-- Indizes der exportierten Tabellen
 --
 
 --
--- Indexes for table `articles`
+-- Indizes für die Tabelle `articles`
 --
 ALTER TABLE `articles`
   ADD PRIMARY KEY (`article_id`);
 
 --
--- Indexes for table `products`
+-- Indizes für die Tabelle `products`
 --
 ALTER TABLE `products`
   ADD PRIMARY KEY (`prod_id`);
 
 --
--- Indexes for table `user`
+-- Indizes für die Tabelle `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`user_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT für exportierte Tabellen
 --
 
 --
--- AUTO_INCREMENT for table `articles`
+-- AUTO_INCREMENT für Tabelle `articles`
 --
 ALTER TABLE `articles`
   MODIFY `article_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `products`
+-- AUTO_INCREMENT für Tabelle `products`
 --
 ALTER TABLE `products`
   MODIFY `prod_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT für Tabelle `user`
 --
 ALTER TABLE `user`
   MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
