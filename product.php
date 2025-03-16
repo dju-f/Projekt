@@ -27,11 +27,13 @@
         $result = mysqli_query($conn, $sql);
         if(mysqli_num_rows($result) > 0) {
             while($row = mysqli_fetch_assoc($result)){
-                echo $row["prod_image"];
-                echo $row["prod_name"];
-                echo $row["prod_shorttext"];
-                echo $row["prod_id"];
-                echo $row["prod_longtext"];
+                echo "<div class=\"product_detailed\">";
+                echo "<img src=\"" . $row["prod_image"] . "\" class=\"product_detailed\">";
+                // echo $row["prod_image"];
+                echo "<h1 class=\"product_detailed\">" . $row["prod_name"] . "</h1>";
+                // echo $row["prod_name"];
+                echo "<p class=\"product_detailed\">" . $row["prod_longtext"] . "</p>";
+                echo "<p class=\"product_detailed\">CHF <br> " . $row["prod_price"] . "</p>";
                 echo $row["prod_price"];
             };
         }
