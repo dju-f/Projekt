@@ -27,15 +27,12 @@
         $result = mysqli_query($conn, $sql);
         if(mysqli_num_rows($result) > 0) {
             while($row = mysqli_fetch_assoc($result)){
-                echo "<style> body {background-image: url('" . $row["article_image"] . "');  
-                    background-repeat: no-repeat;
-                    background-attachment: scroll;
-                    background-size: 800px;
-                    background-position-x: center;}</style>";
-                echo $row["article_title"];
-                echo $row["article_subtitle"];
-                echo $row["article_id"];
-                echo $row["article_text"];
+                echo "<img src=\"" . $row["article_image"] . "\" class=\"cover_image\">";
+                echo "<h1 class=\"article\">" . $row["article_title"] . "</h1>";
+                // echo $row["article_subtitle"];
+                // echo $row["article_id"];
+                echo "<div class=\"article\">" . $row["article_text"] . "</div>";
+                // echo $row["article_text"];
             };
         }
         else{
