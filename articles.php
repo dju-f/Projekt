@@ -20,7 +20,7 @@
         $result = mysqli_query($conn, $sql);
         if(mysqli_num_rows($result) > 0) {
             while($row = mysqli_fetch_assoc($result)){
-                echo "<a href=article.php?id=".$row["article_id"]." class=\"clickable_div\" style=\"all: unset; cursor: pointer;\">";
+                echo "<a href=article.php?id=".$row["article_id"]." class=\"clickable_div\" style=\"all:inherit\">";
                 echo "<div class=\"product_list_item\">";
                 echo "<img src=\"" . $row["article_image"] . "\"/>";
                 echo "<h1>" . $row["article_title"] . "</h1>";
