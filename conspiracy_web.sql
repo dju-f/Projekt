@@ -60,6 +60,43 @@ CREATE TABLE `forum` (
 
 -- --------------------------------------------------------
 
+-- Daten für Tabelle `forum`
+--
+ 
+INSERT INTO `forum` (`forum_author`, `forum_title`, `forum_text`) VALUES
+('FlacheWahrheit77', 'Die große Lüge', 'Leute, die Erde ist flach! Warum sieht man nie eine echte Krümmung, egal wie hoch man steigt?'),
+('Wahrheitsfinder88', 'NASA – die Meister der Täuschung', 'Genau! Die NASA lügt seit Jahrzehnten. Die ganzen „Weltraum“-Bilder sind gefälscht!'),
+('Skeptiker1984', '', 'Warum sollte man das verheimlichen? Was hätten „sie“ davon?'),
+('Nachdenker90', '', 'Also ganz ehrlich, wenn die Erde flach wäre, müsste es doch irgendwo einen Rand geben. Warum ist den noch niemand drübergefallen?'),
+('FlacheWahrheit77', 'Kontrolle über dein Denken', 'Weil sie nicht wollen, dass wir die Wahrheit erkennen. Sie wollen uns kleinhalten – als bedeutungslosen Punkt in einem erfundenen Universum.'),
+('HinterfragAlles', 'Verbotene Gebiete', 'Vielleicht gibt es mehr Land, das sie uns verheimlichen? Die Antarktis könnte eine Barriere sein!'),
+('ErdkernRebell', '', 'Oder ein Eingang! Admiral Byrd hat eine riesige, warme Welt gesehen – das ist dokumentiert!'),
+('RealDenkerX', 'Warum ist die Antarktis tabu?', 'Und warum ist es so schwer, eine private Reise dorthin zu machen? Weil die UN das Gebiet kontrolliert!'),
+('Nachdenker90', '', 'Aber das ergibt doch keinen Sinn. Wenn da wirklich etwas wäre, könnte man doch mit Drohnen oder Satelliten nachsehen?'),
+('FlacheWahrheit77', '', 'Die Antarktis könnte der Rand der flachen Erde sein. Vielleicht liegt dahinter noch mehr Land!'),
+('Wahrheitsfinder88', 'Die geheime Elite', 'Und vielleicht lebt dort die wahre Macht der Welt – verborgen vor unseren Augen.'),
+('Anonym', 'CERN spielt Gott', 'Und vielleicht benutzen sie CERN, um Portale zu öffnen – in ihre Welt oder in andere Dimensionen.'),
+('Anonym', '2012', '2012 hat sich doch alles verändert. Vielleicht haben sie damals etwas geöffnet?'),
+('Nachdenker90', '', 'Ich erinnere mich, dass 2012 alle über den Maya-Kalender geredet haben. Aber passiert ist doch nichts, oder?'),
+('Anonym', 'Unwirkliche Realität', 'Die Welt fühlt sich seitdem auch seltsam „verschoben“ an.'),
+('5G-Gegner23', '', 'Und seitdem ging der Ausbau von 5G rasant voran. Zufall?'),
+('SchlafschafNeinDanke', 'Strahlung als Waffe', '5G ist keine normale Technologie. Es beeinflusst unser Bewusstsein!\r\nNachdenker90: Leute, 5G ist einfach eine schnellere Mobilfunktechnik. Warum sollte das unser Bewusstsein beeinflussen?'),
+('RealDenkerX', 'Nano-Gifte in der Luft', 'Genau! Die Nanopartikel in der Luft interagieren mit der Strahlung.\r\nSkeptiker1984: Das ist doch Unsinn. Habt ihr dafür Beweise?'),
+('Wahrheitsfinder88', 'Wissen wird unterdrückt!', 'Beweise gibt es genug, aber sie werden gelöscht oder als „Fake News“ bezeichnet.'),
+('5G-Gegner23', '', 'Ist doch auffällig, dass Menschen immer kränker werden, seit 5G aktiv ist!'),
+('Skeptiker1984', '', 'Krankheiten gab es doch schon immer. Ist das nicht ein bisschen weit hergeholt?'),
+('HinterfragAlles', 'Zusammenhänge sehen!', 'Genau. Und das fiel exakt mit der Pandemie zusammen.'),
+('Patriot2020', 'Die Ablenkungstaktik', 'Covid war ein Ablenkungsmanöver! Währenddessen haben sie 5G still und heimlich überall installiert.'),
+('Anonym', 'Gefälschte US-Wahl', 'Und nebenbei haben sie die US-Wahl manipuliert!'),
+('Nachdenker90', '', 'Die Wahl war manipuliert, weil dein Kandidat verloren hat? Ist das nicht etwas zu einfach gedacht?'),
+('Skeptiker1984', '', 'Genau, ihr wollt es einfach nicht wahr haben!'),
+('Patriot2020', 'Trump gegen den Deep State', 'Trump war eine Bedrohung für die globale Elite. Deshalb musste er weg.'),
+('DimensionenSprung', 'Hat Trump das Geheimnis gekannt?', 'Vielleicht wusste er zu viel und wollte etwas enthüllen?'),
+('Anonym', 'Wie Kennedy', 'Genau wie Kennedy! Wer zu viel gegen das System unternimmt, wird beseitigt.'),
+('RealDenkerX', 'Es ist noch nicht vorbei!', 'Aber Trump gibt nicht auf. Wartet nur ab!\r\n ');
+ 
+-- --------------------------------------------------------
+ 
 --
 -- Table structure for table `products`
 --
