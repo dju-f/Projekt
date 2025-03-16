@@ -25,7 +25,7 @@
             while($row = mysqli_fetch_assoc($result)){
             echo $row["forum_author"];
             echo $row["forum_title"];
-            echo $row["forum_text"];
+            echo nl2br($row["forum_text"]);
             };
         }
         else{
