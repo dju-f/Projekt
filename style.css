@@ -10,11 +10,21 @@ h1, h2, h3, h4, h5, h6, p, video{
     border: 0;  
     font-size: 120%;
 }
-body.homepage{
+/* body.homepage{
     background-image: url(matrix-rain-codes.3840x2160\(1\).gif);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+} */
+
+#matrix {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width:100%;
+    /* min-width: 100%; 
+    min-height: 100%; */
+    z-index: -1;
 }
 
 h1.article{
