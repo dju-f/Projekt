@@ -27,14 +27,21 @@
         $result = mysqli_query($conn, $sql);
         if(mysqli_num_rows($result) > 0) {
             while($row = mysqli_fetch_assoc($result)){
-                echo "<div class=\"product_detailed\">";
-                echo "<img src=\"" . $row["prod_image"] . "\" class=\"product_detailed\">";
+                // echo "<div class=\"product_detailed\">";
+                // echo "<div class=\"product_detailed_image\">";
+                echo "<img src=\"" . $row["prod_image"] . "\" style=\"width: fit-content;\" class=\"product_detailed_cover\">";
                 // echo $row["prod_image"];
-                echo "<h1 class=\"product_detailed\">" . $row["prod_name"] . "</h1>";
+                // echo "</div>";
+                // echo "<div class=product_detailed_text>";
+                echo "<h1 class=\"product_detailed_name\">" . $row["prod_name"] . "</h1>";
+                echo "<p class=\"product_detailed_price\">CHF " . $row["prod_price"] . "</p>";
                 // echo $row["prod_name"];
-                echo "<p class=\"product_detailed\">" . $row["prod_longtext"] . "</p>";
-                echo "<p class=\"product_detailed\">CHF <br> " . $row["prod_price"] . "</p>";
-                echo $row["prod_price"];
+                echo "<div class=\"product_detailed_text\">" . $row["prod_longtext"] . "</div>";
+                echo "<h1 class=\"product_detailed_name\">Jetzt Kaufen</h1>";
+                echo "<p class=\"product_detailed_price\">CHF " . $row["prod_price"] . "</p>";
+                echo "<div class=\"product_detailed_text\"><p><strong>Achtung!</strong> Der externe Anbieter dieses Produktes gehört zur Elite, die Sie absichtlich im Dunkeln hält. Um Ihre Bankdaten zu schützen, geben Sie sie hier ein:</p></div>";
+                // echo $row["prod_price"];
+                // echo "</div>";
             };
         }
         else{
@@ -44,13 +51,13 @@
     mysqli_close($conn);
 ?>
         <form action="product_receive.php" method="post">
-            Personalien:<br>
-                Benutzername:                       <input type="text" name="user"><br>
-                E-mail:                             <input type="text" name="email"><br>
-            Kontodaten:<br>
-                Name (Vornahme Nachname):           <input type="text" name="name"><br>
-                Kartennummer (Ohne Lehrzeichen):    <input type="text" name="cnumber"><br>
-                CVV:                                <input type="text" name="cvv"><br>
-                Ablaufdatum (MM/JJ):                <input type="text" name="expirydate"><br>
-                                                    <input type="submit">
+                <div class="product_detailed_form"><p>Benutzername</p><input type="text" name="user"></div>
+                <div class="product_detailed_form"><p>E-mail</p><input type="text" name="email"></div>                             
+                <div class="product_detailed_form"><p>Name (Vorname Nachname)</p><input type="text" name="name"></div>
+                <div class="product_detailed_form"><p>Kartennummer (Ohne Lehrzeichen)</p><input type="text" name="cnumber"></div>
+                <div class="product_detailed_form"><p>CVV</p><input type="text" name="cvv"></div>
+                <div class="product_detailed_form"><p>Ablaufdatum (MM/JJ)</p><input type="text" name="expirydate"></div>
+                <br><br><br>
+                <div class="product_detailed_form"><input type="submit" value="JETZT KAUFEN"></div>
+                <br><br>                                
         </form>
