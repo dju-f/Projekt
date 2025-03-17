@@ -15,7 +15,7 @@
             </ul> 
         </div>
         <h1 class="title">Forum</h1>    
-        <a class="button_comment" href="forum_input.html" target="_blank">KOMMENTAR VERFASSEN</a>
+        <a class="button_comment" href="forum_input.html">KOMMENTAR VERFASSEN</a>
     </body>
 </html>
 <?php
