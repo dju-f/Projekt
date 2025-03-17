@@ -79,8 +79,10 @@ INSERT INTO `forum` (`forum_author`, `forum_title`, `forum_text`) VALUES
 ('Nachdenker90', '', 'Ich erinnere mich, dass 2012 alle über den Maya-Kalender geredet haben. Aber passiert ist doch nichts, oder?'),
 ('Anonym', 'Unwirkliche Realität', 'Die Welt fühlt sich seitdem auch seltsam „verschoben“ an.'),
 ('5G-Gegner23', '', 'Und seitdem ging der Ausbau von 5G rasant voran. Zufall?'),
-('SchlafschafNeinDanke', 'Strahlung als Waffe', '5G ist keine normale Technologie. Es beeinflusst unser Bewusstsein!\r\nNachdenker90: Leute, 5G ist einfach eine schnellere Mobilfunktechnik. Warum sollte das unser Bewusstsein beeinflussen?'),
-('RealDenkerX', 'Nano-Gifte in der Luft', 'Genau! Die Nanopartikel in der Luft interagieren mit der Strahlung.\r\nSkeptiker1984: Das ist doch Unsinn. Habt ihr dafür Beweise?'),
+('SchlafschafNeinDanke', 'Strahlung als Waffe', '5G ist keine normale Technologie. Es beeinflusst unser Bewusstsein!'),
+('Nachdenker90', '', 'Leute, 5G ist einfach eine schnellere Mobilfunktechnik. Warum sollte das unser Bewusstsein beeinflussen?'),
+('RealDenkerX', 'Nano-Gifte in der Luft', 'Genau! Die Nanopartikel in der Luft interagieren mit der Strahlung.'),
+('Skeptiker1984', '', 'Das ist doch Unsinn. Habt ihr dafür Beweise?')
 ('Wahrheitsfinder88', 'Wissen wird unterdrückt!', 'Beweise gibt es genug, aber sie werden gelöscht oder als „Fake News“ bezeichnet.'),
 ('5G-Gegner23', '', 'Ist doch auffällig, dass Menschen immer kränker werden, seit 5G aktiv ist!'),
 ('Skeptiker1984', '', 'Krankheiten gab es doch schon immer. Ist das nicht ein bisschen weit hergeholt?'),
@@ -92,8 +94,8 @@ INSERT INTO `forum` (`forum_author`, `forum_title`, `forum_text`) VALUES
 ('Patriot2020', 'Trump gegen den Deep State', 'Trump war eine Bedrohung für die globale Elite. Deshalb musste er weg.'),
 ('DimensionenSprung', 'Hat Trump das Geheimnis gekannt?', 'Vielleicht wusste er zu viel und wollte etwas enthüllen?'),
 ('Anonym', 'Wie Kennedy', 'Genau wie Kennedy! Wer zu viel gegen das System unternimmt, wird beseitigt.'),
-('RealDenkerX', 'Es ist noch nicht vorbei!', 'Aber Trump gibt nicht auf. Wartet nur ab!\r\n '),
-('testeste', 'swti', 'fsdgvalkfh\r\nadfh\r\n\r\nadfh    \r\ngfdgfg\r\ntuikl\r\nzzz        ');
+('RealDenkerX', 'Es ist noch nicht vorbei!', 'Aber Trump gibt nicht auf. Wartet nur ab!');
+
 
 -- --------------------------------------------------------
 
