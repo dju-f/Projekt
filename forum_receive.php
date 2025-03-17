@@ -19,6 +19,6 @@
         mysqli_close($conn); 
 
 
-    header("Location: examplepage.php");
+    header("Location: forum.php");
     die();
 ?>

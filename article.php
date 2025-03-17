@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="icon" type="image/png" href="favicon.png">
         <link rel="stylesheet" href="style.css">
-        <title>Produkte</title>
+        <title>Artikel</title>
     </head>
     <body>
         <div class="div_navigation_bar">
@@ -33,6 +34,7 @@
                 // echo $row["article_id"];
                 echo "<div class=\"article\">" . $row["article_text"] . "</div>";
                 // echo $row["article_text"];
+                echo "<div class=\"article\"><a class=\"button_test\" href=\"forum.php\" target=_blank>Schreibe deine Meinung in unserem unzensierten Forum der Wahrheit!</a></div>";
             };
         }
         else{
