@@ -16,11 +16,13 @@
 
 
         <form action="forum_receive.php" method="post">
-            Autor (Kann leer bleiben.):             <input type="text" name="author"><br>
-            Titel:                                  <input type="text" name="title"><br>
-            Text:<br>                                   
-            <textarea rows = "5" cols = "60" name = "text"></textarea><br>
-                                                    <input type="submit">
+            <!-- <div class="product_detailed_form"><p>Benutzername</p><input type="text" name="user"></div> -->
+            <div class="forum_input"><p>Autor (Kann leer bleiben)</p><input type="text" name="author"></div>
+            <div class="forum_input"><p>Titel</p><input type="text" name="title"></div>
+            <div class="forum_input"><p>Kommentar</p><textarea rows = "5" cols = "60" name = "text"></textarea></div>
+            <!-- Text:<br>                                   
+            <textarea rows = "5" cols = "60" name = "text"></textarea><br> -->
+                                                    <input class="comment_send" class="forum_input" type="submit" value="ABSENDEN">
         </form>
 
     </body>
