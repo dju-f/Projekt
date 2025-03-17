@@ -180,14 +180,14 @@ a.navigation_bar:hover, a.navigation_bar:active {
 }
 a.navigation_bar_home:hover, a.navigation_bar_home:active{
     font-size: 120%;
-    border: 5px solid rgb(129, 224, 145);
+    outline: 5px solid rgb(129, 224, 145);
     color: rgb(129, 224, 145);
     padding: 20px 30px;
     text-align: center;
     text-decoration: none;
     display: block;
     float: left;
-    margin: 10px 5px 10px 15px;
+    margin: 15px 10px 10px 20px;
 }
 a.navigation_bar_selected{
     font-size: 120%;
@@ -358,9 +358,13 @@ border: 1px dashed red;
 border: 1px dashed rgb(107, 114, 212);
 } */
 
-/* .clickable_div{
-    border: 5px dashed rgb(129, 224, 145)
-} */
+a.clickable_div:hover div{
+    /* outline: 5px solid rgb(255, 255, 255); */
+    border: 5px solid rgb(129, 224, 145);
+    /* padding: 5px; */
+    /* margin: 15px; */
+    color:rgb(129, 224, 145);
+}
 
 
 h1.product_list_item{
@@ -377,7 +381,7 @@ p.product_list_item_description{
     line-clamp: 3;
     display: -webkit-box;
     max-height: 5.5ch;
-    -webkit-line-clamp: 3; /* Number of lines to show */
+    -webkit-line-clamp: 3; 
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -395,8 +399,10 @@ div.product_list_item{
     padding: none;
     font-size: 16px;
     cursor: pointer;
-    border: 5px solid rgb(129, 224, 145);
-    border-radius: 0px;
+    border: 5px solid rgb(255, 255, 255);
+    /* border-radius: 0px; */
+    -webkit-transition: 0.5s;
+    transition: 0.1s;
 }
 div.product_list_item img{
     width:4cm;
@@ -559,7 +565,7 @@ a:link.button_comment, a:visited.button_comment {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin: 40px 15px 5px 15px;
+    margin: 10px 15px 5px 15px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
@@ -573,7 +579,7 @@ a:hover.button_comment, a:active.button_comment {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin: 40px 15px 5px 15px;
+    margin: 10px 15px 5px 15px;
 }
 
 h1.title{

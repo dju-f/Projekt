@@ -14,6 +14,7 @@
                 <li><a class="navigation_bar" href="forum.php">FORUM</a></li>    
             </ul> 
         </div>
+        <h1 class="title">Web-Artikel</h1>
 
 <?php
 
