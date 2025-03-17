@@ -82,7 +82,7 @@ INSERT INTO `forum` (`forum_author`, `forum_title`, `forum_text`) VALUES
 ('SchlafschafNeinDanke', 'Strahlung als Waffe', '5G ist keine normale Technologie. Es beeinflusst unser Bewusstsein!'),
 ('Nachdenker90', '', 'Leute, 5G ist einfach eine schnellere Mobilfunktechnik. Warum sollte das unser Bewusstsein beeinflussen?'),
 ('RealDenkerX', 'Nano-Gifte in der Luft', 'Genau! Die Nanopartikel in der Luft interagieren mit der Strahlung.'),
-('Skeptiker1984', '', 'Das ist doch Unsinn. Habt ihr dafür Beweise?')
+('Skeptiker1984', '', 'Das ist doch Unsinn. Habt ihr dafür Beweise?'),
 ('Wahrheitsfinder88', 'Wissen wird unterdrückt!', 'Beweise gibt es genug, aber sie werden gelöscht oder als „Fake News“ bezeichnet.'),
 ('5G-Gegner23', '', 'Ist doch auffällig, dass Menschen immer kränker werden, seit 5G aktiv ist!'),
 ('Skeptiker1984', '', 'Krankheiten gab es doch schon immer. Ist das nicht ein bisschen weit hergeholt?'),
