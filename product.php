@@ -40,7 +40,7 @@
                 echo "<div class=\"product_detailed_text\">" . $row["prod_longtext"] . "</div>";
                 echo "<h1 class=\"product_detailed_name\">Jetzt Kaufen</h1>";
                 echo "<p class=\"product_detailed_price\">CHF " . $row["prod_price"] . "</p>";
-                echo "<div class=\"product_detailed_text\"><p><strong>Achtung!</strong> Der externe Anbieter dieses Produktes gehört zur Elite, die Sie absichtlich im Dunkeln hält. Um Ihre Bankdaten zu schützen, geben Sie diese hier ein:</p></div>";
+                // echo "<div class=\"product_detailed_text\"><p><strong>Achtung!</strong> Der externe Anbieter dieses Produktes gehört zur Elite, die Sie absichtlich im Dunkeln hält. Um Ihre Bankdaten zu schützen, geben Sie diese hier ein:</p></div>";
                 // echo $row["prod_price"];
                 // echo "</div>";
             $prod_link = $row["prod_link"];
