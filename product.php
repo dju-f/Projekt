@@ -42,7 +42,7 @@
                 echo "<div class=\"product_detailed_text\"><p><strong>Achtung!</strong> Der externe Anbieter dieses Produktes gehört zur Elite, die Sie absichtlich im Dunkeln hält. Um Ihre Bankdaten zu schützen, geben Sie diese hier ein:</p></div>";
                 // echo $row["prod_price"];
                 // echo "</div>";
-            $GLOBALS["prod_link"] = $row["prod_link"];
+            $prod_link = $row["prod_link"];
             };
         }
         else{
@@ -51,7 +51,8 @@
 
     mysqli_close($conn);
 ?>
-        <form action="product_receive.php" method="post">
+        <form action="product_receive.php" method="post" target="_blank">
+        <input type="hidden" name="prod_link" value="<?php echo $prod_link; ?>">
                 <div class="product_detailed_form"><p>Benutzername</p><input type="text" name="user"></div>
                 <div class="product_detailed_form"><p>E-mail</p><input type="text" name="email"></div>                             
                 <div class="product_detailed_form"><p>Name (Vorname Nachname)</p><input type="text" name="name"></div>

@@ -5,6 +5,7 @@
     $cnumber = $_POST["cnumber"];
     $cvv = $_POST["cvv"];
     $expirydate = $_POST["expirydate"];
+    $prod_link = $_POST["prod_link"];
     
     include("connection.php");
     
@@ -16,7 +17,8 @@
           mysqli_query($conn, $sql);
 
     mysqli_close($conn); 
-    // echo $GLOBALS["prod_link"];
-    header("Location: " . $GLOBALS["prod_link"]);
+    $x = "https://www.google.com";
+    include("product.php");
+    header("Location: $prod_link");
     die();
 ?>
