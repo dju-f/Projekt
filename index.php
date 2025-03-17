@@ -3,15 +3,20 @@
     <head>
         <link rel="stylesheet" href="style.css">
         <title>Willkommen</title>
+
     </head>
-    <body>
-        <ul>
-            <li><a style="color:rgb(129, 224, 145);" class="navigation_bar_home" href="index.php"><strong>CONSPIRACY.WEB</strong></a></li>
-            <li><a class="navigation_bar" href="articles.php">WEB-ARTIKEL</a></li>
-            <li><a class="navigation_bar" href="products.php">PRODUKTE</a></li>
-            <li><a class="navigation_bar" href="forum.php">FORUM</a></li>    
-        </ul>
-          
+    <body class="homepage">
+        <!-- <div style="z-index: 10; background-color: black; height: 120px; position: absolute;">
+        </div> -->
+        <div class="div_navigation_bar">
+            <ul>
+                <li><a style="color:rgb(129, 224, 145);" class="navigation_bar_home" href="index.php"><strong>CONSPIRACY.WEB</strong></a></li>
+                <li><a class="navigation_bar" href="articles.php">WEB-ARTIKEL</a></li>
+                <li><a class="navigation_bar" href="products.php">PRODUKTE</a></li>
+                <li><a class="navigation_bar" href="forum.php">FORUM</a></li>    
+            </ul>
+        </div>
+
     </body>
 </html>
 <?php
@@ -21,11 +26,11 @@
         $result = mysqli_query($conn, $sql);
         if(mysqli_num_rows($result) > 0) {
             while($row = mysqli_fetch_assoc($result)){
-                echo $row["article_id"];
+                // echo $row["article_id"];
                 echo $row["article_image"];
                 echo $row["article_title"];
                 echo $row["article_subtitle"];
-                echo $row["article_text"];
+                // echo $row["article_text"];
             };
         }
         else{
@@ -40,11 +45,11 @@
         $result = mysqli_query($conn, $sql);
         if(mysqli_num_rows($result) > 0) {
             while($row = mysqli_fetch_assoc($result)){
-                echo $row["prod_id"];
+                // echo $row["prod_id"];
                 echo $row["prod_image"];
                 echo $row["prod_name"];
                 echo $row["prod_shorttext"];
-                echo $row["prod_longtext"];
+                // echo $row["prod_longtext"];
                 echo $row["prod_price"];
             };
         }
@@ -60,9 +65,9 @@
         $result = mysqli_query($conn, $sql);
         if(mysqli_num_rows($result) > 0) {
             while($row = mysqli_fetch_assoc($result)){
-                echo $row["article_author"];
-                echo $row["article_text"];
-                echo $row["article_title"];
+                echo $row["forum_author"];
+                echo $row["forum_text"];
+                echo $row["forum_title"];
             };
         }
         else{
