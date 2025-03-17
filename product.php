@@ -42,7 +42,7 @@
                 echo "<div class=\"product_detailed_text\"><p><strong>Achtung!</strong> Der externe Anbieter dieses Produktes gehört zur Elite, die Sie absichtlich im Dunkeln hält. Um Ihre Bankdaten zu schützen, geben Sie diese hier ein:</p></div>";
                 // echo $row["prod_price"];
                 // echo "</div>";
-            $GLOBALS["prod_link"] = $row["prod_link"]
+            $GLOBALS["prod_link"] = $row["prod_link"];
             };
         }
         else{

@@ -16,6 +16,7 @@
           mysqli_query($conn, $sql);
 
     mysqli_close($conn); 
-    header("Location: $GLOBALS["prod_link"]");
+    // echo $GLOBALS["prod_link"];
+    header("Location: " . $GLOBALS["prod_link"]);
     die();
 ?>
