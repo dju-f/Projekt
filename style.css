@@ -1,18 +1,27 @@
-.citation {
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
-}
-.hidden {
-    opacity: 0;
-}
+/* Die CSS-Rules sind hier auf folgende Weise angeordnet:
+1. Allgemein (ganze Webseite)
+2. Navigationsleiste
+3. index.php - Homepage (mehr oder weniger von oben nach unten angeordnet)
+4. products.php und articles.php - Anzeige Produkte/Artikel (die Klassen werden mit "product_" benannt, gelten aber auch für Artikel
+5. article.php Detailansicht Artikel
+6. product.php Detailansicht Produkt + Bankdatenformular
+7. Formulare allgemein + forum_input.html
+8. Forum
+9. Fusszeile
+*/
+
+
+/* Mit Ctrl+K und dann Ctrl+0 können alles Rules eingeklappt werden (zur Übersicht) */
+
+
+/* 1. Allgemein */
 body{  
     margin: 0;  
     padding: 0;  
-    border: 0;  
-}
-::selection {
-    background: rgb(129, 224, 145);
-    color: black;
+    border: 0;
+    background-color: rgb(0, 0, 0);
+    color:white;
+    font-family: Helvetica, Arial, sans-serif;
 }
 h1, h2, h3, h4, h5, h6, p, video{  
     margin: 0;  
@@ -20,6 +29,112 @@ h1, h2, h3, h4, h5, h6, p, video{
     border: 0;  
     font-size: 120%;
 }
+::selection {
+    background: rgb(129, 224, 145);
+    color: black;
+}
+a:link.button_test, a:visited.button_test {
+    font-size: 150%;
+    border: 5px solid white;
+    color: white;
+    padding: 25px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px auto 5px auto;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+a:hover.button_test, a:active.button_test {
+    font-size: 150%;
+    border: 5px solid rgb(129, 224, 145);
+    background-color: rgb(129, 224, 145);
+    color: rgb(0, 0, 0);
+    padding: 25px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px auto 5px auto;
+}
+h1.title{
+    font-size: 400%;
+    color: rgb(255, 255, 255);
+    margin: 10px 40px 10px;
+}
+/* 2. Navigationsleiste */
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow:hidden;
+}
+a.navigation_bar, a.navigation_bar:visited{
+    font-size: 120%;
+    color: rgb(255, 255, 255);
+    padding: 25px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    float: left;
+    margin: 10px 5px 10px 5px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    
+}
+a.navigation_bar_home{
+    font-size: 120%;
+    color: rgb(255, 255, 255);
+    padding: 25px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    float: left;
+    margin: 10px 5px 10px 15px;
+
+}
+a.navigation_bar:hover, a.navigation_bar:active {
+    font-size: 120%;
+    background-color:rgb(129, 224, 145);
+    color: rgb(0, 0, 0);
+    padding: 25px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    float: left;
+    margin: 10px 5px 10px 5px;
+}
+a.navigation_bar_home:hover, a.navigation_bar_home:active{
+    font-size: 120%;
+    outline: 5px solid rgb(129, 224, 145);
+    color: rgb(129, 224, 145);
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    float: left;
+    margin: 15px 10px 10px 20px;
+}
+a.navigation_bar_selected{
+    font-size: 120%;
+    background-color:rgb(129, 224, 145);
+    color: rgb(0, 0, 0);
+    padding: 25px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    float: left;
+    margin: 10px 5px 10px 5px;
+}
+div.div_navigation_bar{
+    background-color: rgb(0, 0, 0);
+
+    position: sticky;
+    top: 0px;
+    margin: none; 
+
+}
+/* 3. index.php */
 #matrix {
     position: fixed;
 
@@ -46,71 +161,6 @@ h1, h2, h3, h4, h5, h6, p, video{
 
     padding-top: 100px;
     z-index: 6;
-}
-h1.article{
-    font-size: 400%;
-    text-align: center;
-    color: rgb(129, 224, 145);
-    margin: 10px 15% 40px 15%;
-}
-h2.article{
-    font-size: 250%;
-    border-bottom: 5px solid rgb(129, 224, 145);
-}
-div.article{
-
-    margin: 10px 20% 40px 20%;
-}
-img.article, video.article{
-    display: block;
-    
-    margin: 40px auto 40px auto;
-}
-img.cover_image{
-    width: 800px;
-    height: 800px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-img.product_detailed_cover{
-    width: 800px;
-    height: 800px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-}
-h1.product_detailed_name{
-    font-size: 400%;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    margin: 10px 15% 10px 15%;
-}
-div.product_detailed_text{
-    margin: 10px 20% 10px 20%;
-}
-div.product_detailed_form{
-    margin: 0px 20% 0px 20%;
-
-}
-img.product_detailed_image{
-    width: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 50px auto 50px auto;
-    border: 25px solid rgb(129, 224, 145);
-}
-p.product_detailed_price{
-    font-size: 250%;
-    text-align: center;
-    color: rgb(129, 224, 145);
-    margin: 0px 15% 0px 15%;
-}
-div.product_detailed_text h1{
-    font-size: 250%;
-    border-bottom: 5px solid rgb(129, 224, 145);
 }
 div.homepage_content{
     text-align: center;
@@ -145,6 +195,13 @@ div.citations{
 
     padding: 20px 40px 20px;
     font-size: 2.5vw;
+}
+.citation {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+.hidden {
+    opacity: 0;
 }
 div #message_box1{
     grid-area: 2 / 1 / 3 / 5;
@@ -382,128 +439,12 @@ a.homepage_link_direct:hover, a.homepage_link_direct:active{
     display: inline-block;
     margin: 15px 15px 15px 15px;
 }
-body{
-    background-color: rgb(0, 0, 0);
-    color:white;
-    font-family: Helvetica, Arial, sans-serif;
-}
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    overflow:hidden;
-}
-a.navigation_bar, a.navigation_bar:visited{
-    font-size: 120%;
-    color: rgb(255, 255, 255);
-    padding: 25px 35px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    float: left;
-    margin: 10px 5px 10px 5px;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    
-}
-a.navigation_bar_home{
-    font-size: 120%;
-    color: rgb(255, 255, 255);
-    padding: 25px 35px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    float: left;
-    margin: 10px 5px 10px 15px;
-
-}
-a.navigation_bar:hover, a.navigation_bar:active {
-    font-size: 120%;
-    background-color:rgb(129, 224, 145);
-    color: rgb(0, 0, 0);
-    padding: 25px 35px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    float: left;
-    margin: 10px 5px 10px 5px;
-}
-a.navigation_bar_home:hover, a.navigation_bar_home:active{
-    font-size: 120%;
-    outline: 5px solid rgb(129, 224, 145);
-    color: rgb(129, 224, 145);
-    padding: 20px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    float: left;
-    margin: 15px 10px 10px 20px;
-}
-a.navigation_bar_selected{
-    font-size: 120%;
-    background-color:rgb(129, 224, 145);
-    color: rgb(0, 0, 0);
-    padding: 25px 35px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    float: left;
-    margin: 10px 5px 10px 5px;
-}
-div.div_navigation_bar{
-    background-color: rgb(0, 0, 0);
-
-    position: sticky;
-    top: 0px;
-    margin: none; 
-
-}
-a:link.button_test, a:visited.button_test {
-    font-size: 150%;
-    border: 5px solid white;
-    color: white;
-    padding: 25px 35px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 5px auto 5px auto;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-}
-a:hover.button_test, a:active.button_test {
-    font-size: 150%;
-    border: 5px solid rgb(129, 224, 145);
-    background-color: rgb(129, 224, 145);
-    color: rgb(0, 0, 0);
-    padding: 25px 35px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 5px auto 5px auto;
-}
+/* 4. products.php und articles.php */
 a.clickable_div:hover div{
 
     border: 5px solid rgb(255, 255, 255);
 
     color:rgb(129, 224, 145);
-}
-h1.product_list_item{
-    font-size: 200%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin-left: 10px;
-    white-space: nowrap;
-}
-p.product_list_item_description{
-
-    margin-left: 10px;
-    line-clamp: 3;
-    display: -webkit-box;
-    max-height: 5.5ch;
-    -webkit-line-clamp: 3; 
-    -webkit-box-orient: vertical;
-    overflow: hidden;
 }
 div.product_list_item{
     display:grid;
@@ -522,6 +463,23 @@ div.product_list_item{
 
     -webkit-transition: 0.5s;
     transition: 0.1s;
+}
+h1.product_list_item{
+    font-size: 200%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 10px;
+    white-space: nowrap;
+}
+p.product_list_item_description{
+
+    margin-left: 10px;
+    line-clamp: 3;
+    display: -webkit-box;
+    max-height: 5.5ch;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 div.product_list_item img{
     width:4cm;
@@ -546,6 +504,73 @@ div.product_list_item p.price_tag{
     text-overflow: ellipsis;
 
 }
+/* 5. article.php */
+div.article{
+    margin: 10px 20% 40px 20%;
+}
+img.cover_image{
+    width: 800px;
+    height: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1.article{
+    font-size: 400%;
+    text-align: center;
+    color: rgb(129, 224, 145);
+    margin: 10px 15% 40px 15%;
+}
+h2.article{
+    font-size: 250%;
+    border-bottom: 5px solid rgb(129, 224, 145);
+}
+img.article, video.article{
+    display: block;
+    
+    margin: 40px auto 40px auto;
+}
+/* 6. product.php */
+img.product_detailed_cover{
+    width: 800px;
+    height: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+h1.product_detailed_name{
+    font-size: 400%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 10px 15% 10px 15%;
+}
+div.product_detailed_text{
+    margin: 10px 20% 10px 20%;
+}
+div.product_detailed_text h1{
+    font-size: 250%;
+    border-bottom: 5px solid rgb(129, 224, 145);
+}
+img.product_detailed_image{
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 50px auto 50px auto;
+    border: 25px solid rgb(129, 224, 145);
+}
+p.product_detailed_price{
+    font-size: 250%;
+    text-align: center;
+    color: rgb(129, 224, 145);
+    margin: 0px 15% 0px 15%;
+}
+div.product_detailed_form{
+    margin: 0px 20% 0px 20%;
+
+}
+/* 7. Formulare */
 input {
     width: 100%;
     padding: 12px 20px;
@@ -562,8 +587,23 @@ input {
 input:focus {
     border: 5px solid rgb(129, 224, 145);
 }
+textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 5px solid #ffffff;
+    background-color: black;
+    color:#ffffff;
+    font-size: 100%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+textarea:focus{
+    border: 5px solid rgb(129, 224, 145);
+}
 input[type=submit]{
-
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -602,22 +642,7 @@ input[type=submit]:hover.comment_send{
     color:#000000;
     border: 5px solid rgb(129, 224, 145);
 }
-textarea{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 5px solid #ffffff;
-    background-color: black;
-    color:#ffffff;
-    font-size: 100%;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
-}
-textarea:focus{
-    border: 5px solid rgb(129, 224, 145);
-}
+/* 8. Forum */
 div.comment{
     border: 5px solid rgb(129, 224, 145);
     color: rgb(255, 255, 255);
@@ -663,14 +688,10 @@ a:hover.button_comment, a:active.button_comment {
     display: inline-block;
     margin: 10px 15px 5px 15px;
 }
-h1.title{
-    font-size: 400%;
-    color: rgb(255, 255, 255);
-    margin: 10px 40px 10px;
-}
 div.forum_input{
     margin: 0px 10% 0px 10%;
 }
+/* 9. Fusszeile */
 p.footer{
     font-size: 20px;
 
