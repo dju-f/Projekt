@@ -43,6 +43,10 @@
     echo "<div id='message_box1'></div>";
     echo "<div id='message_box2'></div>";
     echo "<div id='message_box3'></div>";
+    echo "<div id='quotation_open'>«</div>";
+    echo "<div id='quotation_close'>»</div>";
+
+
 
     echo "<script>
         let citations1 = " . json_encode($citations1) . ";
@@ -84,10 +88,13 @@
                 echo "</div>";
                 // echo "</div>";
                 echo "<div class=\"examples\">";
+                echo "<div class=\"examples_article\">";
+                echo "<a href='articles.php' class='homepage_link'><strong>Web-Artikel</strong></a>";
                 echo "<div class=\"random_article\">";
-                echo $row["article_image"];
+                echo "<img src='" . $row["article_image"] . "' class='homepage_random_image'>";
                 echo $row["article_title"];
                 echo $row["article_subtitle"];
+                echo "</div>";
                 echo "</div>";
                 // echo $row["article_text"];
             };
@@ -105,12 +112,15 @@
         if(mysqli_num_rows($result) > 0) {
             while($row = mysqli_fetch_assoc($result)){
                 // echo $row["prod_id"];
+                echo "<div class=\"examples_prod\">";
+                echo "<a href='products.php' class='homepage_link'><strong>Produkte</strong></a>";
                 echo "<div class=\"random_prod\">";
-                echo $row["prod_image"];
+                echo "<img src='" . $row["prod_image"] . "' class='homepage_random_image'>";
                 echo $row["prod_name"];
                 echo $row["prod_shorttext"];
                 // echo $row["prod_longtext"];
                 echo $row["prod_price"];
+                echo "</div>";
                 echo "</div>";
             };
         }
@@ -126,10 +136,18 @@
         $result = mysqli_query($conn, $sql);
         if(mysqli_num_rows($result) > 0) {
             while($row = mysqli_fetch_assoc($result)){
+                echo "<div class=\"examples_forum\">";
+                echo "<a href='forum.php' class='homepage_link'><strong>Forum</strong></a>";
                 echo "<div class=\"random_forum\">";
+                echo "<div class='homepage_forum_image'>";
+                echo "<p class='forum_quotation'>«...» &nbsp; &nbsp; &nbsp;</p>";
+                echo "<p class='forum_quotation'>&nbsp; &nbsp; &nbsp; «...»</p>";
+                echo "<p class='forum_description'>Besuchen Sie unser unzensiertes Forum der Wahrheit und tauschen Sie sich mit Mitwissenden aus!</p>";
+                echo "</div>";
                 echo $row["forum_author"];
                 echo $row["forum_text"];
                 echo $row["forum_title"];
+                echo "</div>";
                 echo "</div>";
             };
         }
@@ -140,6 +158,7 @@
     mysqli_close($conn);
 ?>
 <html>
+    <p class="footer"><br><br><br><br><br>© 2025 ConspiracyWeb<br><br></p>
     </div>
     </div>
     </div>

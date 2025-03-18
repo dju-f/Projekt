@@ -64,3 +64,7 @@
                 <div class="product_detailed_form"><input type="submit" value="JETZT KAUFEN"></div>
                 <br><br>                                
         </form>
+
+<html>
+    <p class="footer"><br><br><br><br><br>© 2025 ConspiracyWeb<br><br></p>
+</html>

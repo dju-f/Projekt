@@ -40,3 +40,6 @@
 
     mysqli_close($conn);
 ?>
+<html>
+    <p class="footer"><br><br><br><br><br>© 2025 ConspiracyWeb<br><br></p>
+</html>
