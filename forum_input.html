@@ -1,31 +1,33 @@
 <!DOCTYPE html>
+<!-- Dieses Dokument zeigt das Formular für das Schreiben eines Kommentars an und übergibt den Input. -->
 <html>
+    <!-- Im Head-Teil ist der code für das Favicon, das Styledokument für alle CSS-Teile und der Titel der Seite. -->
     <head>
         <link rel="icon" type="image/png" href="images/favicon.png">
         <link rel="stylesheet" href="style.css">
         <title>Forum</title>
     </head>
     <body>
+        <!-- Der folgende Teil ist die Navigationsleiste. -->
         <div class="div_navigation_bar">
             <ul>
                 <li><a style="color:rgb(129, 224, 145);"class="navigation_bar_home" href="index.php"><strong>CONSPIRACY.WEB</strong></a></li>
                 <li><a class="navigation_bar" href="articles.php">WEB-ARTIKEL</a></li>
                 <li><a class="navigation_bar" href="products.php">PRODUKTE</a></li>
-                <li><a class="navigation_bar_selected" href="forum.php">FORUM</a></li>    
-            </ul> 
+                <li><a class="navigation_bar_selected" href="forum.php">FORUM</a></li>
+            </ul>
         </div>
 
-
+        <!-- Hier befindet sich das Formular, welches den Input und den Benutzer mit der Post-Methode an forum_receive.php weiterleitet. -->
         <form action="forum_receive.php" method="post">
-            <!-- <div class="product_detailed_form"><p>Benutzername</p><input type="text" name="user"></div> -->
             <div class="forum_input"><p>Autor (Kann leer bleiben)</p><input type="text" name="author"></div>
             <div class="forum_input"><p>Titel</p><input type="text" name="title"></div>
+            <!-- Der Textarea-Tag macht ein Textfeld, mit dem auch Absätze gespeichert werden können. -->
             <div class="forum_input"><p>Kommentar</p><textarea rows = "5" cols = "60" name = "text"></textarea></div>
-            <!-- Text:<br>                                   
-            <textarea rows = "5" cols = "60" name = "text"></textarea><br> -->
                                                     <input class="comment_send" class="forum_input" type="submit" value="ABSENDEN">
         </form>
 
     </body>
+    <!-- Hier befindet sich die Fusszeile. -->
     <p class="footer"><br><br><br><br><br>© 2025 ConspiracyWeb<br><br></p>
 </html>
