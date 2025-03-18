@@ -5,7 +5,6 @@
 .hidden {
     opacity: 0;
 }
-
 body{  
     margin: 0;  
     padding: 0;  
@@ -15,15 +14,12 @@ body{
     background: rgb(129, 224, 145);
     color: black;
 }
-
 h1, h2, h3, h4, h5, h6, p, video{  
     margin: 0;  
     padding: 10px;  
     border: 0;  
     font-size: 120%;
 }
-
-
 #matrix {
     position: fixed;
 
@@ -43,7 +39,6 @@ h1, h2, h3, h4, h5, h6, p, video{
     padding-top: 100px;
     z-index: 5;
 }
-
 .fade_bottom{
     background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.9));
 
@@ -52,7 +47,6 @@ h1, h2, h3, h4, h5, h6, p, video{
     padding-top: 100px;
     z-index: 6;
 }
-
 h1.article{
     font-size: 400%;
     text-align: center;
@@ -63,7 +57,6 @@ h2.article{
     font-size: 250%;
     border-bottom: 5px solid rgb(129, 224, 145);
 }
-
 div.article{
 
     margin: 10px 20% 40px 20%;
@@ -80,9 +73,6 @@ img.cover_image{
     margin-left: auto;
     margin-right: auto;
 }
-
-
-
 img.product_detailed_cover{
     width: 800px;
     height: 800px;
@@ -91,14 +81,12 @@ img.product_detailed_cover{
     margin-right: auto;
     margin-top: 40px;
 }
-
 h1.product_detailed_name{
     font-size: 400%;
     text-align: center;
     color: rgb(255, 255, 255);
     margin: 10px 15% 10px 15%;
 }
-
 div.product_detailed_text{
     margin: 10px 20% 10px 20%;
 }
@@ -106,8 +94,6 @@ div.product_detailed_form{
     margin: 0px 20% 0px 20%;
 
 }
-
-
 img.product_detailed_image{
     width: 300px;
     display: block;
@@ -116,25 +102,16 @@ img.product_detailed_image{
     margin: 50px auto 50px auto;
     border: 25px solid rgb(129, 224, 145);
 }
-
 p.product_detailed_price{
     font-size: 250%;
     text-align: center;
     color: rgb(129, 224, 145);
     margin: 0px 15% 0px 15%;
 }
-
 div.product_detailed_text h1{
     font-size: 250%;
     border-bottom: 5px solid rgb(129, 224, 145);
 }
-
-
-
-
-
-
-
 div.homepage_content{
     text-align: center;
 
@@ -155,9 +132,6 @@ div.logo{
     overflow: clip;
 
 }
-
-
-
 div.citations{
     background-color: rgba(0,0,0,0.9);
     width: 100%;
@@ -240,7 +214,6 @@ div.examples_forum{
     overflow: hidden;
     height: 200vh;
 }
-
 a.homepage_link:link, a.homepage_link:visited{
     height: 10vh;
     width: 25vw;
@@ -257,7 +230,6 @@ a.homepage_link:link, a.homepage_link:visited{
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
-
 a.homepage_link:hover, a.homepage_link:active{
     height: 10vh;
     width: 25vw;
@@ -273,9 +245,6 @@ a.homepage_link:hover, a.homepage_link:active{
     display: block;
     margin: 30vh 15px 5px 15px;
 }
-
-
-
 div.random{
     background-color: #000000;
     border: 5px solid rgb(129, 224, 145);
@@ -286,8 +255,6 @@ div.random{
     text-align: center;
 
 }
-
-
 img.homepage_random_image{
     width: 25vw;
 
@@ -322,8 +289,6 @@ p.forum_quotation{
     padding: none;
     margin: none;
 }
-
-
 div.random h1{
     font-size: 200%;
     height: 15vh;
@@ -346,7 +311,6 @@ div.random p.homepage_text{
     -webkit-line-clamp: 3; 
     -webkit-box-orient: vertical;
 }
-
 div.random p.homepage_price{
     font-size: 200%;
     overflow: hidden;
@@ -385,7 +349,6 @@ div.random p.homepage_forum_text{
     align-content: center;
 
 }
-
 a.homepage_link_direct:link, a.homepage_link_direct:visited{
     height: 10vh;
     width: 80%;
@@ -403,7 +366,6 @@ a.homepage_link_direct:link, a.homepage_link_direct:visited{
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
-
 a.homepage_link_direct:hover, a.homepage_link_direct:active{
     height: 10vh;
 
@@ -420,19 +382,11 @@ a.homepage_link_direct:hover, a.homepage_link_direct:active{
     display: inline-block;
     margin: 15px 15px 15px 15px;
 }
-
-
-
-
-
-
-
 body{
     background-color: rgb(0, 0, 0);
     color:white;
     font-family: Helvetica, Arial, sans-serif;
 }
-
 ul{
     list-style-type: none;
     margin: 0;
@@ -440,11 +394,6 @@ ul{
     border: 0;
     overflow:hidden;
 }
-
-
-
-
- 
 a.navigation_bar, a.navigation_bar:visited{
     font-size: 120%;
     color: rgb(255, 255, 255);
@@ -458,7 +407,6 @@ a.navigation_bar, a.navigation_bar:visited{
     transition: 0.5s;
     
 }
-
 a.navigation_bar_home{
     font-size: 120%;
     color: rgb(255, 255, 255);
@@ -503,10 +451,6 @@ a.navigation_bar_selected{
     float: left;
     margin: 10px 5px 10px 5px;
 }
-
-
-
-
 div.div_navigation_bar{
     background-color: rgb(0, 0, 0);
 
@@ -515,14 +459,6 @@ div.div_navigation_bar{
     margin: none; 
 
 }
-
-
-
-
-
-
-
-
 a:link.button_test, a:visited.button_test {
     font-size: 150%;
     border: 5px solid white;
@@ -535,8 +471,6 @@ a:link.button_test, a:visited.button_test {
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
-
-
 a:hover.button_test, a:active.button_test {
     font-size: 150%;
     border: 5px solid rgb(129, 224, 145);
@@ -548,16 +482,12 @@ a:hover.button_test, a:active.button_test {
     display: inline-block;
     margin: 5px auto 5px auto;
 }
-
-
 a.clickable_div:hover div{
 
     border: 5px solid rgb(255, 255, 255);
 
     color:rgb(129, 224, 145);
 }
-
-
 h1.product_list_item{
     font-size: 200%;
     overflow: hidden;
@@ -575,7 +505,6 @@ p.product_list_item_description{
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
-
 div.product_list_item{
     display:grid;
     grid-template-columns: 4cm 100fr 15ch;
@@ -617,11 +546,6 @@ div.product_list_item p.price_tag{
     text-overflow: ellipsis;
 
 }
-
-
-
-
-
 input {
     width: 100%;
     padding: 12px 20px;
@@ -659,7 +583,6 @@ input[type=submit]:hover{
 input.comment_send{
     width:fit-content;
 }
-
 input[type=submit].comment_send{
 
     padding: 12px 20px;
@@ -695,16 +618,12 @@ textarea{
 textarea:focus{
     border: 5px solid rgb(129, 224, 145);
 }
-
-
-
 div.comment{
     border: 5px solid rgb(129, 224, 145);
     color: rgb(255, 255, 255);
     padding: 20px 30px;
     margin: 15px;
 }
-
 span.comment_author{
     font-size: 120%;
 
@@ -720,7 +639,6 @@ span.comment_text{
     font-size: 120%;
     color: rgb(255, 255, 255);
 }
-
 a:link.button_comment, a:visited.button_comment {
     font-size: 150%;
     border: 5px solid rgb(129, 224, 145);
@@ -734,7 +652,6 @@ a:link.button_comment, a:visited.button_comment {
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
-
 a:hover.button_comment, a:active.button_comment {
     font-size: 150%;
     border: 5px solid rgb(129, 224, 145);
@@ -746,19 +663,14 @@ a:hover.button_comment, a:active.button_comment {
     display: inline-block;
     margin: 10px 15px 5px 15px;
 }
-
 h1.title{
     font-size: 400%;
     color: rgb(255, 255, 255);
     margin: 10px 40px 10px;
 }
-
 div.forum_input{
     margin: 0px 10% 0px 10%;
 }
-
-
-
 p.footer{
     font-size: 20px;
 
