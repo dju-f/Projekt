@@ -530,6 +530,14 @@ img.article, video.article{
     
     margin: 40px auto 40px auto;
 }
+a.source{
+    text-decoration: none;
+    color:white;
+}
+a.source:hover{
+    text-decoration: none;
+    color:rgb(129, 224, 145);
+}
 /* 6. product.php */
 img.product_detailed_cover{
     width: 800px;
