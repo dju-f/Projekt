@@ -41,13 +41,22 @@ h1, h2, h3, h4, h5, h6, p, video{
     z-index: -1;
     object-fit: cover;
 }
-.fade{
-    background: linear-gradient( #000, rgba(0, 0, 0, 0));
+.fade_top{
+    background: linear-gradient(#000, rgba(0, 0, 0, 0));
     /* margin-top: 597px; */
     position: sticky;
     top: 90px;
     padding-top: 100px;
     z-index: 5;
+}
+
+.fade_bottom{
+    background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.9));
+    /* margin-top: 597px; */
+    position: relative;
+
+    padding-top: 100px;
+    z-index: 6;
 }
 
 h1.article{
@@ -279,7 +288,7 @@ a.homepage_link:link, a.homepage_link:visited{
     text-align: center;
     text-decoration: none;
     display: block;
-    margin: 10px 15px 5px 15px;
+    margin: 30vh 15px 5px 15px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
@@ -297,7 +306,7 @@ a.homepage_link:hover, a.homepage_link:active{
     text-align: center;
     text-decoration: none;
     display: block;
-    margin: 10px 15px 5px 15px;
+    margin: 30vh 15px 5px 15px;
 }
 
 

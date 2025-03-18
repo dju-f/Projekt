@@ -17,7 +17,7 @@
                 <li><a class="navigation_bar" href="forum.php">FORUM</a></li>    
             </ul>
         </div>
-        <div class="fade"></div>
+        <div class="fade_top"></div>
         <video autoplay muted loop id="matrix">
             <source src="images/matrix_rain_codes.mp4" type="video/mp4">
                 Your browser does not support HTML5 video.
@@ -40,6 +40,7 @@
     $citations3 = ["«Was ist unter der Erde? Der Eingang zur geheimen Welt!»","«CERN: Sie öffnen Tore, die besser geschlossen bleiben sollten!»","«Chemtrails – sie sprühen mehr als nur „Wolken“!»","«Reptiloiden unter uns – sie sind die wahre Elite!»","«Sie haben uns den Mond gezeigt – aber nie die Wahrheit!»","«Die Illuminaten sind keine Legende – sie sind die Wahrheit!»","«Sie haben uns den Mond gezeigt – aber nie die Wahrheit!»","«Die Minions existieren - und sie haben Hitler zur Macht gebracht!»"];
 
     // Es bruucht ei message_box pro Pool. De Style isch wurscht.
+    echo "<div class='fade_bottom'></div>";
     echo "<div class=\"citations\">";
     echo "<div id='message_box1' class='citation'></div>";
     echo "<div id='message_box2' class='citation'></div>";
