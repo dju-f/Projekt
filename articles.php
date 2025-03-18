@@ -29,6 +29,7 @@
         if(mysqli_num_rows($result) > 0) {
             // Hier werden alle Artikel mit all ihren Atributen angezeigt und danach hört die Schlaufe auf.
             while($row = mysqli_fetch_assoc($result)){
+                // Hier liegt der Link zu einem einzelnen Artikel in article.php.
                 echo "<a href=article.php?id=".$row["article_id"]." class=\"clickable_div\" style=\"all:inherit\">";
                 echo "<div class=\"product_list_item\">";
                 echo "<img src=\"" . $row["article_image"] . "\"/>";
