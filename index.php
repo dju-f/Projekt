@@ -41,36 +41,50 @@
 
     // Es bruucht ei message_box pro Pool. De Style isch wurscht.
     echo "<div class=\"citations\">";
-    echo "<div id='message_box1'></div>";
-    echo "<div id='message_box2'></div>";
-    echo "<div id='message_box3'></div>";
+    echo "<div id='message_box1' class='citation'></div>";
+    echo "<div id='message_box2' class='citation'></div>";
+    echo "<div id='message_box3' class='citation'></div>";
     echo "<div id='quotation_open'>«</div>";
     echo "<div id='quotation_close'>»</div>";
 
 
 
     echo "<script>
-        let citations1 = " . json_encode($citations1) . ";
-        let citations2 = " . json_encode($citations2) . ";
-        let citations3 = " . json_encode($citations3) . ";
+    let citations1 = " . json_encode($citations1) . ";
+    let citations2 = " . json_encode($citations2) . ";
+    let citations3 = " . json_encode($citations3) . ";
 
-        let index = 0; // Das isch eif d Startziit vom index.
+    let index = 0; 
 
-        // Da müend wider die message_box sache sii.
-        function updateMessages() {
-            document.getElementById('message_box1').innerText = citations1[index % citations1.length];
-            document.getElementById('message_box2').innerText = citations2[index % citations2.length];
-            document.getElementById('message_box3').innerText = citations3[index % citations3.length];
-            
-            index++; //Da wächslets zu de nächschte citation.
-        }
+    function updateMessages() {
+        let messageBox1 = document.getElementById('message_box1');
+        let messageBox2 = document.getElementById('message_box2');
+        let messageBox3 = document.getElementById('message_box3');
 
-        // Das echoed d citations.
-        updateMessages();
+        // This lets the citations fade out.
+        messageBox1.classList.add('hidden');
+        messageBox2.classList.add('hidden');
+        messageBox3.classList.add('hidden');
 
-        //Das isch de Ziitintervall
-        setInterval(updateMessages, 6000);
-    </script>";
+        // This waits until the new citations should show.
+        setTimeout(() => {
+            messageBox1.innerText = citations1[index % citations1.length];
+            messageBox2.innerText = citations2[index % citations2.length];
+            messageBox3.innerText = citations3[index % citations3.length];
+
+            // This lets the new citations fade in.
+            messageBox1.classList.remove('hidden');
+            messageBox2.classList.remove('hidden');
+            messageBox3.classList.remove('hidden');
+
+            index++; 
+        }, 1000); // Here it awaits the finished fade out.
+    }
+    //This runs the citations, so that they interchange. 
+    updateMessages();
+    // This makes sure that there are citations from the beginning onwards.
+    setInterval(updateMessages, 6000);
+</script>";
 ?>
 
 
