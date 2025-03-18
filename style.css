@@ -3,6 +3,10 @@ body{
     padding: 0;  
     border: 0;  
 }
+::selection {
+    background: rgb(129, 224, 145);
+    color: black;
+}
 
 h1, h2, h3, h4, h5, h6, p, video{  
     margin: 0;  
@@ -355,14 +359,15 @@ p.forum_description{
     font-size:180%;
     text-align: center;
     /* align-content: center; */
-    height:12.5vw;
+    height: 12.5vw;
 
     padding: none;
     margin: none;
 }
 p.forum_quotation{
 
-    font-size:400%; color: rgb(129, 224, 145);
+    font-size:400%; 
+    color: rgb(129, 224, 145);
     max-height:6.25vw;
 
     padding: none;
@@ -702,7 +707,7 @@ border: 1px dashed rgb(107, 114, 212);
 
 a.clickable_div:hover div{
     /* outline: 5px solid rgb(255, 255, 255); */
-    border: 5px solid rgb(129, 224, 145);
+    border: 5px solid rgb(255, 255, 255);
     /* padding: 5px; */
     /* margin: 15px; */
     color:rgb(129, 224, 145);
