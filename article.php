@@ -19,7 +19,7 @@
         </div>
 <!-- Der PHP-Teil ist für das Herunterladen der Web-Artikel aus der Datenbank und für das Anzeigen zuständig. -->
 <?php
-    // Hier wird die ID 
+    // Hier wird die ID aus dem URL übertragen.
     $article_id = isset($_GET['id']) ?
     intval($_GET['id']) : 0;
     // Zuerst wird die Verbindung zur Datenbank hergestellt.
