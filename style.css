@@ -195,7 +195,7 @@ div #quotation_close{
 }
 div.examples{
     background-color: rgba(0,0,0,0.9);
-    width: 100%;
+    width: 102%;
     /* margin: 2vw auto 4vw; */
     text-align: center;
     display:grid;
@@ -281,37 +281,7 @@ a.homepage_link:hover, a.homepage_link:active{
 
 
 
-div.random_article{
-    background-color: #000000;
-    border: 5px solid rgb(129, 224, 145);
-    min-height: 25vw;
-    width: 25vw;
-    margin: 10px 15px 5px 15px;
-    /* background-color: #000000;
-    margin: 20vw 2vw 4vw;
-    text-align: center;
-    display:grid;
-    color: rgb(255, 255, 255);
-    border: 10px solid rgb(129, 224, 145);
-    padding: 20px 40px 20px;
-    font-size: 1vw; */
-}
-div.random_prod{
-    background-color: #000000;
-    border: 5px solid rgb(129, 224, 145);
-    min-height: 25vw;
-    width: 25vw;
-    margin: 10px 15px 5px 15px;
-    /* background-color: #000000;
-    margin: 20vw 2vw 4vw;
-    text-align: center;
-    display:grid;
-    color: rgb(255, 255, 255);
-    border: 10px solid rgb(129, 224, 145);
-    padding: 20px 40px 20px;
-    font-size: 1vw; */
-}
-div.random_forum{
+div.random{
     background-color: #000000;
     border: 5px solid rgb(129, 224, 145);
     min-height: 25vw;
@@ -328,15 +298,51 @@ div.random_forum{
     padding: 20px 40px 20px;
     font-size: 1vw; */
 }
+/* div.random_prod{
+    background-color: #000000;
+    border: 5px solid rgb(129, 224, 145);
+    min-height: 25vw;
+    width: 25vw;
+    margin: 10px 15px 5px 15px;
+    align-content: baseline;
+    text-align: center; */
+    /* background-color: #000000;
+    margin: 20vw 2vw 4vw;
+    text-align: center;
+    display:grid;
+    color: rgb(255, 255, 255);
+    border: 10px solid rgb(129, 224, 145);
+    padding: 20px 40px 20px;
+    font-size: 1vw; */
+/* }
+div.random_forum{
+    background-color: #000000;
+    border: 5px solid rgb(129, 224, 145);
+    min-height: 25vw;
+    width: 25vw;
+    margin: 10px 15px 5px 15px;
+    align-content: baseline;
+    text-align: center; */
+    /* background-color: #000000;
+    margin: 20vw 2vw 4vw;
+    text-align: center;
+    display:grid;
+    color: rgb(255, 255, 255);
+    border: 10px solid rgb(129, 224, 145);
+    padding: 20px 40px 20px;
+    font-size: 1vw; */
+/* } */
 
 img.homepage_random_image{
     width: 25vw;
+
 }
 div.homepage_forum_image{
     height: 25vw;
     /* border: 1px solid red; */
 }
 p.forum_description{
+
     font-size:180%;
     text-align: center;
     /* align-content: center; */
@@ -346,12 +352,101 @@ p.forum_description{
     margin: none;
 }
 p.forum_quotation{
+
     font-size:400%; color: rgb(129, 224, 145);
     max-height:6.25vw;
 
     padding: none;
     margin: none;
 }
+
+
+div.random h1{
+    font-size: 200%;
+    height: 15vh;
+    align-content: center;
+}
+div.random p.homepage_text{
+    font-size: 120%;
+    height: 20vh;
+    align-content: center;
+}
+
+div.random p.homepage_price{
+    font-size: 200%;
+    height: 3vh;
+    align-content: center;
+    margin: none;
+    padding: none;
+    color:rgb(129, 224, 145);
+
+}
+div.random p.homepage_author{
+    color:rgb(129, 224, 145);
+    font-size: 120%;
+    /* margin-top: 5vh; */
+    height: 5vh;
+    align-content: center;
+    text-align: center;
+    width: calc(25vw - 60px);
+    margin: 15px 20px 0px 20px;
+    /* border: 1px solid red; */
+    border-top: 5px solid rgb(129, 224, 145);
+}
+div.random p.homepage_forum_title{
+    margin: none;
+    padding: none;
+    /* height: 20vh; */
+    align-content: center;
+    font-size: 200%;
+    height: 10vh;
+
+
+}
+div.random p.homepage_forum_text{
+    font-size: 120%;
+    /* height: 20vh; */
+    align-content: center;
+    /* border-bottom: 5px solid rgb(129, 224, 145); */
+}
+
+a.homepage_link_direct:link, a.homepage_link_direct:visited{
+    height: 10vh;
+    width: 27vh;
+    /* width: 25vw; */
+    align-content: center;
+    background-color: #000000;
+    font-size: 250%;
+    border-top: 5px solid rgb(129, 224, 145);
+    color: rgb(129, 224, 145);
+    padding: 15px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px 15px 15px 15px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+a.homepage_link_direct:hover, a.homepage_link_direct:active{
+    height: 10vh;
+
+    width: 27vh;
+    align-content: center;
+    background-color: #000000;
+    font-size: 250%;
+    border-top: 5px solid rgb(129, 224, 145);
+    background-color: rgb(129, 224, 145);
+    color: rgb(0, 0, 0);
+    padding: 15px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px 15px 15px 15px;
+}
+
+
+
 
 
 
