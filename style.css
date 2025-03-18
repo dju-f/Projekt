@@ -442,7 +442,7 @@ a.homepage_link_direct:hover, a.homepage_link_direct:active{
 /* 4. products.php und articles.php */
 a.clickable_div:hover div{
 
-    border: 5px solid rgb(255, 255, 255);
+    border: 5px solid rgb(129, 224, 145);
 
     color:rgb(129, 224, 145);
 }
