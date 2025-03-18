@@ -1,5 +1,5 @@
 <?php
-// Diese Dokument stellt die Verbindung zur Datenbank her, wann immer es durch die Include-Funktion aufgerufen wird.
+// Dieses Dokument stellt die Verbindung zur Datenbank her, wann immer es durch die Include-Funktion aufgerufen wird.
     $dbserver = "localhost";
     $dbuser = "root";
     $dbpass = "";
