@@ -3,11 +3,16 @@
         $title = $_POST["title"];
         $text = $_POST["text"];
         
-        if ($author == "" and $title != "" and $text != "") {
+        if ($author == "") {
             $author = "Anonym";
         }
 
-        include("connection.php");
+        if ($title == "") {
+            $title = "[Kein Titel]";
+        }
+
+        if ($text !== "") {
+            include("connection.php");
         
             mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
@@ -16,7 +21,10 @@
 
             mysqli_query($conn, $sql);
                 
-        mysqli_close($conn); 
+            mysqli_close($conn); 
+        }
+
+       
 
 
     header("Location: forum.php");
