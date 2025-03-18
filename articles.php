@@ -14,8 +14,8 @@
                 <li><a style="color:rgb(129, 224, 145);"class="navigation_bar_home" href="index.php"><strong>CONSPIRACY.WEB</strong></a></li>
                 <li><a class="navigation_bar_selected" href="articles.php">WEB-ARTIKEL</a></li>
                 <li><a class="navigation_bar" href="products.php">PRODUKTE</a></li>
-                <li><a class="navigation_bar" href="forum.php">FORUM</a></li>    
-            </ul> 
+                <li><a class="navigation_bar" href="forum.php">FORUM</a></li>
+            </ul>
         </div>
         <!-- Hier wird der Titel der Seite angezeigt. -->
         <h1 class="title">Web-Artikel</h1>
@@ -24,7 +24,7 @@
     // Zuerst wird die Verbindung zur Datenbank hergestellt.
     include("connection.php");
         // Hier wird die Tabelle in der Datenbank ausgewählt.
-        $sql = "SELECT * FROM articles";            
+        $sql = "SELECT * FROM articles";
         $result = mysqli_query($conn, $sql);
         if(mysqli_num_rows($result) > 0) {
             // Hier werden alle Artikel mit all ihren Atributen angezeigt und danach hört die Schlaufe auf.
