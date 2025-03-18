@@ -23,24 +23,24 @@
         </video>
         <!-- <img src="Übergang 1.png"> -->
          <div class="homepage_content">
-            <div class="introduction">
-                <div class="logo">
-                    CONSPIRACY_WEB
+            <div class="logo">
+                <!-- <div class="logo"> -->
+                    <strong>CONSPIRACY.WEB</strong>
                 </div>
     </body>
 </html>
 
 
 <?php
-    $citations1 = ["Die Wahrheit wird nicht aufgedeckt – sie wird freigelassen!","Trump ist der einzige, der die geheime Agenda stoppen kann!","5G ist mehr als nur Strahlung – es ist Kontrolle!","Die Elite will, dass du im Dunkeln bleibst – aber wir bringen das Licht!","Flache Erde? Wir sind nicht die Verrückten – wir sind die, die wachen!","Zerstört die 5G-Masten – für die Freiheit, für die Wahrheit!","Wer fragt, hat bereits die Antwort: Die Erde ist flach!","Die Medien lügen – wir decken die Wahrheit auf!"];
-    $citations2 = ["Die Elite belügt uns – Zeit, den Schleier zu lüften!","Der Mondlandungsbetrug ist nur der Anfang – was verstecken sie noch?","Trump ist der wahre Retter – weil er uns aus der Matrix führt!","Du wirst in der Matrix leben, wenn du nicht aufwachst!","5G: Kontrolle, Überwachung, Zerstörung – wir sagen Nein!","Lass uns das System stürzen – wir sind die, die wissen, was wirklich läuft!","Die wahre Macht liegt bei uns – zusammen können wir alles aufdecken!","Wahlen manipuliert – der wahre Sieger wurde nie genannt!"];
-    $citations3 = ["Was ist unter der Erde? Der Eingang zur geheimen Welt!","CERN: Sie öffnen Tore, die besser geschlossen bleiben sollten!","Chemtrails – sie sprühen mehr als nur „Wolken“!","Reptiloiden unter uns – sie sind die wahre Elite!","Sie haben uns den Mond gezeigt – aber nie die Wahrheit!","Die Illuminaten sind keine Legende – sie sind die Wahrheit!","Sie haben uns den Mond gezeigt – aber nie die Wahrheit!","Die Minions existieren - und sie haben Hitler zur Macht gebracht!"];
+    $citations1 = ["«Die Wahrheit wird nicht aufgedeckt – sie wird freigelassen!»","«Trump ist der einzige, der die geheime Agenda stoppen kann!»","«5G ist mehr als nur Strahlung – es ist Kontrolle!»","«Die Elite will, dass du im Dunkeln bleibst – aber wir bringen das Licht!»","«Flache Erde? Wir sind nicht die Verrückten – wir sind die Wachen!»","«Zerstört die 5G-Masten – für die Freiheit, für die Wahrheit!»","«Wer fragt, hat bereits die Antwort: Die Erde ist flach!»","«Die Medien lügen – wir decken die Wahrheit auf!»"];
+    $citations2 = ["«Die Elite belügt uns – Zeit, den Schleier zu lüften!»","«Der Mondlandungsbetrug ist nur der Anfang – was verstecken sie noch?»","«Trump ist der wahre Retter – weil er uns aus der Matrix führt!»","«Du wirst in der Matrix leben, wenn du nicht aufwachst!»","«5G: Kontrolle, Überwachung, Zerstörung – wir sagen Nein!»","«Lass uns das System stürzen – wir sind die, die wissen, was wirklich läuft!»","«Die wahre Macht liegt bei uns – zusammen können wir alles aufdecken!»","«Wahlen manipuliert – der wahre Sieger wurde nie genannt!»"];
+    $citations3 = ["«Was ist unter der Erde? Der Eingang zur geheimen Welt!»","«CERN: Sie öffnen Tore, die besser geschlossen bleiben sollten!»","«Chemtrails – sie sprühen mehr als nur „Wolken“!»","«Reptiloiden unter uns – sie sind die wahre Elite!»","«Sie haben uns den Mond gezeigt – aber nie die Wahrheit!»","«Die Illuminaten sind keine Legende – sie sind die Wahrheit!»","«Sie haben uns den Mond gezeigt – aber nie die Wahrheit!»","«Die Minions existieren - und sie haben Hitler zur Macht gebracht!»"];
 
     // Es bruucht ei message_box pro Pool. De Style isch wurscht.
     echo "<div class=\"citations\">";
-    echo "<div id='message_box1' style='font-size: 20px; padding: 10px;'></div>";
-    echo "<div id='message_box2' style='font-size: 20px; padding: 10px;'></div>";
-    echo "<div id='message_box3' style='font-size: 20px; padding: 10px;'></div>";
+    echo "<div id='message_box1'></div>";
+    echo "<div id='message_box2'></div>";
+    echo "<div id='message_box3'></div>";
 
     echo "<script>
         let citations1 = " . json_encode($citations1) . ";
@@ -80,7 +80,7 @@
             while($row = mysqli_fetch_assoc($result)){
                 // echo $row["article_id"];
                 echo "</div>";
-                echo "</div>";
+                // echo "</div>";
                 echo "<div class=\"examples\">";
                 echo "<div class=\"random_article\">";
                 echo $row["article_image"];
@@ -138,6 +138,7 @@
     mysqli_close($conn);
 ?>
 <html>
+    </div>
     </div>
     </div>
 </html>
