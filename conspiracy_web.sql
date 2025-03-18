@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 17, 2025 at 11:04 PM
+-- Generation Time: Mar 18, 2025 at 02:23 PM
 -- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- PHP Version: 8.0.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -53,8 +53,9 @@ INSERT INTO `articles` (`article_id`, `article_title`, `article_subtitle`, `arti
 --
 
 CREATE TABLE `forum` (
+  `forum_id` int(11) NOT NULL,
   `forum_author` varchar(32) NOT NULL DEFAULT 'Anonym',
-  `forum_title` varchar(64) NOT NULL,
+  `forum_title` varchar(64) NOT NULL DEFAULT '[Kein Titel]',
   `forum_text` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -62,49 +63,39 @@ CREATE TABLE `forum` (
 -- Dumping data for table `forum`
 --
 
-INSERT INTO `forum` (`forum_author`, `forum_title`, `forum_text`) VALUES
-('FlacheWahrheit77', 'Die große Lüge', 'Leute, die Erde ist flach! Warum sieht man nie eine echte Krümmung, egal wie hoch man steigt?'),
-('Wahrheitsfinder88', 'NASA – die Meister der Täuschung', 'Genau! Die NASA lügt seit Jahrzehnten. Die ganzen „Weltraum“-Bilder sind gefälscht!'),
-('Skeptiker1984', '', 'Warum sollte man das verheimlichen? Was hätten „sie“ davon?'),
-('Nachdenker90', '', 'Also ganz ehrlich, wenn die Erde flach wäre, müsste es doch irgendwo einen Rand geben. Warum ist den noch niemand drübergefallen?'),
-('FlacheWahrheit77', 'Kontrolle über dein Denken', 'Weil sie nicht wollen, dass wir die Wahrheit erkennen. Sie wollen uns kleinhalten – als bedeutungslosen Punkt in einem erfundenen Universum.'),
-('HinterfragAlles', 'Verbotene Gebiete', 'Vielleicht gibt es mehr Land, das sie uns verheimlichen? Die Antarktis könnte eine Barriere sein!'),
-('ErdkernRebell', '', 'Oder ein Eingang! Admiral Byrd hat eine riesige, warme Welt gesehen – das ist dokumentiert!'),
-('RealDenkerX', 'Warum ist die Antarktis tabu?', 'Und warum ist es so schwer, eine private Reise dorthin zu machen? Weil die UN das Gebiet kontrolliert!'),
-('Nachdenker90', '', 'Aber das ergibt doch keinen Sinn. Wenn da wirklich etwas wäre, könnte man doch mit Drohnen oder Satelliten nachsehen?'),
-('FlacheWahrheit77', '', 'Die Antarktis könnte der Rand der flachen Erde sein. Vielleicht liegt dahinter noch mehr Land!'),
-('Wahrheitsfinder88', 'Die geheime Elite', 'Und vielleicht lebt dort die wahre Macht der Welt – verborgen vor unseren Augen.'),
-('Anonym', 'CERN spielt Gott', 'Und vielleicht benutzen sie CERN, um Portale zu öffnen – in ihre Welt oder in andere Dimensionen.'),
-('Anonym', '2012', '2012 hat sich doch alles verändert. Vielleicht haben sie damals etwas geöffnet?'),
-('Nachdenker90', '', 'Ich erinnere mich, dass 2012 alle über den Maya-Kalender geredet haben. Aber passiert ist doch nichts, oder?'),
-('Anonym', 'Unwirkliche Realität', 'Die Welt fühlt sich seitdem auch seltsam „verschoben“ an.'),
-('5G-Gegner23', '', 'Und seitdem ging der Ausbau von 5G rasant voran. Zufall?'),
-('SchlafschafNeinDanke', 'Strahlung als Waffe', '5G ist keine normale Technologie. Es beeinflusst unser Bewusstsein!'),
-('Nachdenker90', '', 'Leute, 5G ist einfach eine schnellere Mobilfunktechnik. Warum sollte das unser Bewusstsein beeinflussen?'),
-('RealDenkerX', 'Nano-Gifte in der Luft', 'Genau! Die Nanopartikel in der Luft interagieren mit der Strahlung.'),
-('Skeptiker1984', '', 'Das ist doch Unsinn. Habt ihr dafür Beweise?'),
-('Wahrheitsfinder88', 'Wissen wird unterdrückt!', 'Beweise gibt es genug, aber sie werden gelöscht oder als „Fake News“ bezeichnet.'),
-('5G-Gegner23', '', 'Ist doch auffällig, dass Menschen immer kränker werden, seit 5G aktiv ist!'),
-('Skeptiker1984', '', 'Krankheiten gab es doch schon immer. Ist das nicht ein bisschen weit hergeholt?'),
-('HinterfragAlles', 'Zusammenhänge sehen!', 'Genau. Und das fiel exakt mit der Pandemie zusammen.'),
-('Patriot2020', 'Die Ablenkungstaktik', 'Covid war ein Ablenkungsmanöver! Währenddessen haben sie 5G still und heimlich überall installiert.'),
-('Anonym', 'Gefälschte US-Wahl', 'Und nebenbei haben sie die US-Wahl manipuliert!'),
-('Nachdenker90', '', 'Die Wahl war manipuliert, weil dein Kandidat verloren hat? Ist das nicht etwas zu einfach gedacht?'),
-('Skeptiker1984', '', 'Genau, ihr wollt es einfach nicht wahr haben!'),
-('Patriot2020', 'Trump gegen den Deep State', 'Trump war eine Bedrohung für die globale Elite. Deshalb musste er weg.'),
-('DimensionenSprung', 'Hat Trump das Geheimnis gekannt?', 'Vielleicht wusste er zu viel und wollte etwas enthüllen?'),
-('Anonym', 'Wie Kennedy', 'Genau wie Kennedy! Wer zu viel gegen das System unternimmt, wird beseitigt.'),
-('RealDenkerX', 'Es ist noch nicht vorbei!', 'Aber Trump gibt nicht auf. Wartet nur ab!'),
-('wrthwrth', 'wrthwr', 'wrghtrh'),
-('wrtjwrj', 'wrzjwrzj', 'ququququququququququququququququququququququququququququququ'),
-('swtgrh', 'tweh', 'aethethququququququququququququququququququququququququququququququ'),
-('', '', ''),
-('', '', ''),
-('Anonym', 'dfibgseif', '`effe'),
-('Anonym', 'fe', 'dfef'),
-('', '', ''),
-('', '', ''),
-('', '', '');
+INSERT INTO `forum` (`forum_id`, `forum_author`, `forum_title`, `forum_text`) VALUES
+(1, 'FlacheWahrheit77', 'Die große Lüge', 'Leute, die Erde ist flach! Warum sieht man nie eine echte Krümmung, egal wie hoch man steigt?'),
+(2, 'Wahrheitsfinder88', 'NASA – die Meister der Täuschung', 'Genau! Die NASA lügt seit Jahrzehnten. Die ganzen „Weltraum“-Bilder sind gefälscht!'),
+(3, 'Skeptiker1984', '', 'Warum sollte man das verheimlichen? Was hätten „sie“ davon?'),
+(4, 'Nachdenker90', '', 'Also ganz ehrlich, wenn die Erde flach wäre, müsste es doch irgendwo einen Rand geben. Warum ist den noch niemand drübergefallen?'),
+(5, 'FlacheWahrheit77', 'Kontrolle über dein Denken', 'Weil sie nicht wollen, dass wir die Wahrheit erkennen. Sie wollen uns kleinhalten – als bedeutungslosen Punkt in einem erfundenen Universum.'),
+(6, 'HinterfragAlles', 'Verbotene Gebiete', 'Vielleicht gibt es mehr Land, das sie uns verheimlichen? Die Antarktis könnte eine Barriere sein!'),
+(7, 'ErdkernRebell', '', 'Oder ein Eingang! Admiral Byrd hat eine riesige, warme Welt gesehen – das ist dokumentiert!'),
+(8, 'RealDenkerX', 'Warum ist die Antarktis tabu?', 'Und warum ist es so schwer, eine private Reise dorthin zu machen? Weil die UN das Gebiet kontrolliert!'),
+(9, 'Nachdenker90', '', 'Aber das ergibt doch keinen Sinn. Wenn da wirklich etwas wäre, könnte man doch mit Drohnen oder Satelliten nachsehen?'),
+(10, 'FlacheWahrheit77', '', 'Die Antarktis könnte der Rand der flachen Erde sein. Vielleicht liegt dahinter noch mehr Land!'),
+(11, 'Wahrheitsfinder88', 'Die geheime Elite', 'Und vielleicht lebt dort die wahre Macht der Welt – verborgen vor unseren Augen.'),
+(12, 'Anonym', 'CERN spielt Gott', 'Und vielleicht benutzen sie CERN, um Portale zu öffnen – in ihre Welt oder in andere Dimensionen.'),
+(13, 'Anonym', '2012', '2012 hat sich doch alles verändert. Vielleicht haben sie damals etwas geöffnet?'),
+(14, 'Nachdenker90', '', 'Ich erinnere mich, dass 2012 alle über den Maya-Kalender geredet haben. Aber passiert ist doch nichts, oder?'),
+(15, 'Anonym', 'Unwirkliche Realität', 'Die Welt fühlt sich seitdem auch seltsam „verschoben“ an.'),
+(16, '5G-Gegner23', '', 'Und seitdem ging der Ausbau von 5G rasant voran. Zufall?'),
+(17, 'SchlafschafNeinDanke', 'Strahlung als Waffe', '5G ist keine normale Technologie. Es beeinflusst unser Bewusstsein!'),
+(18, 'Nachdenker90', '', 'Leute, 5G ist einfach eine schnellere Mobilfunktechnik. Warum sollte das unser Bewusstsein beeinflussen?'),
+(19, 'RealDenkerX', 'Nano-Gifte in der Luft', 'Genau! Die Nanopartikel in der Luft interagieren mit der Strahlung.'),
+(20, 'Skeptiker1984', '', 'Das ist doch Unsinn. Habt ihr dafür Beweise?'),
+(21, 'Wahrheitsfinder88', 'Wissen wird unterdrückt!', 'Beweise gibt es genug, aber sie werden gelöscht oder als „Fake News“ bezeichnet.'),
+(22, '5G-Gegner23', '', 'Ist doch auffällig, dass Menschen immer kränker werden, seit 5G aktiv ist!'),
+(23, 'Skeptiker1984', '', 'Krankheiten gab es doch schon immer. Ist das nicht ein bisschen weit hergeholt?'),
+(24, 'HinterfragAlles', 'Zusammenhänge sehen!', 'Genau. Und das fiel exakt mit der Pandemie zusammen.'),
+(25, 'Patriot2020', 'Die Ablenkungstaktik', 'Covid war ein Ablenkungsmanöver! Währenddessen haben sie 5G still und heimlich überall installiert.'),
+(26, 'Anonym', 'Gefälschte US-Wahl', 'Und nebenbei haben sie die US-Wahl manipuliert!'),
+(27, 'Nachdenker90', '', 'Die Wahl war manipuliert, weil dein Kandidat verloren hat? Ist das nicht etwas zu einfach gedacht?'),
+(28, 'Skeptiker1984', '', 'Genau, ihr wollt es einfach nicht wahr haben!'),
+(29, 'Patriot2020', 'Trump gegen den Deep State', 'Trump war eine Bedrohung für die globale Elite. Deshalb musste er weg.'),
+(30, 'DimensionenSprung', 'Hat Trump das Geheimnis gekannt?', 'Vielleicht wusste er zu viel und wollte etwas enthüllen?'),
+(31, 'Anonym', 'Wie Kennedy', 'Genau wie Kennedy! Wer zu viel gegen das System unternimmt, wird beseitigt.'),
+(32, 'RealDenkerX', 'Es ist noch nicht vorbei!', 'Aber Trump gibt nicht auf. Wartet nur ab!');
 
 -- --------------------------------------------------------
 
@@ -232,6 +223,12 @@ ALTER TABLE `articles`
   ADD PRIMARY KEY (`article_id`);
 
 --
+-- Indexes for table `forum`
+--
+ALTER TABLE `forum`
+  ADD PRIMARY KEY (`forum_id`);
+
+--
 -- Indexes for table `products`
 --
 ALTER TABLE `products`
@@ -252,6 +249,12 @@ ALTER TABLE `user`
 --
 ALTER TABLE `articles`
   MODIFY `article_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `forum`
+--
+ALTER TABLE `forum`
+  MODIFY `forum_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- AUTO_INCREMENT for table `products`

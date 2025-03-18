@@ -21,7 +21,7 @@
 <?php
     include("connection.php");
 
-        $sql = "SELECT * FROM forum";            
+        $sql = "SELECT * FROM forum ORDER BY forum_id DESC";            
         $result = mysqli_query($conn, $sql);
         if(mysqli_num_rows($result) > 0) {
             while($row = mysqli_fetch_assoc($result)){
