@@ -122,7 +122,7 @@
                 echo "<p class='homepage_text'>" . $row["prod_shorttext"] . "</p>";
                 // echo $row["prod_longtext"];
                 echo "<p class='homepage_price'>CHF " . $row["prod_price"] . "</p>";
-                echo "<a href='product.php?id=" . $row["prod_id"] . "' class='homepage_link_direct'><strong>Produktdetails</strong></a>";
+                echo "<a href='product.php?id=" . $row["prod_id"] . "' class='homepage_link_direct'><strong>Produkt</strong></a>";
                 echo "</div>";
                 echo "</div>";
             };
