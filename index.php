@@ -17,7 +17,7 @@
                 <li><a class="navigation_bar" href="forum.php">FORUM</a></li>    
             </ul>
         </div>
-        <div class="fade"></div>
+        <div class="fade_top"></div>
         <video autoplay muted loop id="matrix">
             <source src="images/matrix_rain_codes.mp4" type="video/mp4">
                 Your browser does not support HTML5 video.
@@ -40,37 +40,52 @@
     $citations3 = ["«Was ist unter der Erde? Der Eingang zur geheimen Welt!»","«CERN: Sie öffnen Tore, die besser geschlossen bleiben sollten!»","«Chemtrails – sie sprühen mehr als nur „Wolken“!»","«Reptiloiden unter uns – sie sind die wahre Elite!»","«Sie haben uns den Mond gezeigt – aber nie die Wahrheit!»","«Die Illuminaten sind keine Legende – sie sind die Wahrheit!»","«Sie haben uns den Mond gezeigt – aber nie die Wahrheit!»","«Die Minions existieren - und sie haben Hitler zur Macht gebracht!»"];
 
     // Es bruucht ei message_box pro Pool. De Style isch wurscht.
+    echo "<div class='fade_bottom'></div>";
     echo "<div class=\"citations\">";
-    echo "<div id='message_box1'></div>";
-    echo "<div id='message_box2'></div>";
-    echo "<div id='message_box3'></div>";
+    echo "<div id='message_box1' class='citation'></div>";
+    echo "<div id='message_box2' class='citation'></div>";
+    echo "<div id='message_box3' class='citation'></div>";
     echo "<div id='quotation_open'>«</div>";
     echo "<div id='quotation_close'>»</div>";
 
 
 
     echo "<script>
-        let citations1 = " . json_encode($citations1) . ";
-        let citations2 = " . json_encode($citations2) . ";
-        let citations3 = " . json_encode($citations3) . ";
+    let citations1 = " . json_encode($citations1) . ";
+    let citations2 = " . json_encode($citations2) . ";
+    let citations3 = " . json_encode($citations3) . ";
 
-        let index = 0; // Das isch eif d Startziit vom index.
+    let index = 0; 
 
-        // Da müend wider die message_box sache sii.
-        function updateMessages() {
-            document.getElementById('message_box1').innerText = citations1[index % citations1.length];
-            document.getElementById('message_box2').innerText = citations2[index % citations2.length];
-            document.getElementById('message_box3').innerText = citations3[index % citations3.length];
-            
-            index++; //Da wächslets zu de nächschte citation.
-        }
+    function updateMessages() {
+        let messageBox1 = document.getElementById('message_box1');
+        let messageBox2 = document.getElementById('message_box2');
+        let messageBox3 = document.getElementById('message_box3');
 
-        // Das echoed d citations.
-        updateMessages();
+        // This lets the citations fade out.
+        messageBox1.classList.add('hidden');
+        messageBox2.classList.add('hidden');
+        messageBox3.classList.add('hidden');
 
-        //Das isch de Ziitintervall
-        setInterval(updateMessages, 6000);
-    </script>";
+        // This waits until the new citations should show.
+        setTimeout(() => {
+            messageBox1.innerText = citations1[index % citations1.length];
+            messageBox2.innerText = citations2[index % citations2.length];
+            messageBox3.innerText = citations3[index % citations3.length];
+
+            // This lets the new citations fade in.
+            messageBox1.classList.remove('hidden');
+            messageBox2.classList.remove('hidden');
+            messageBox3.classList.remove('hidden');
+
+            index++; 
+        }, 1000); // Here it awaits the finished fade out.
+    }
+    //This runs the citations, so that they interchange. 
+    updateMessages();
+    // This makes sure that there are citations from the beginning onwards.
+    setInterval(updateMessages, 6000);
+</script>";
 ?>
 
 
