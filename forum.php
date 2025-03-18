@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Dieses Dokument zeigt alle Web-Artikel. -->
+<!-- Dieses Dokument zeigt alle Kommentare. -->
 <html>
     <!-- Im Head-Teil ist der code für das Favicon, das Styledokument für alle CSS-Teile und den Namen des Tabs. -->
     <head>
