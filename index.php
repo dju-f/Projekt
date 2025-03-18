@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="icon" type="image/png" href="images/favicon.png">
         <link rel="stylesheet" href="style.css">
         <title>Willkommen</title>
 
@@ -19,7 +19,7 @@
         </div>
         <div class="fade"></div>
         <video autoplay muted loop id="matrix">
-            <source src="matrix-rain-codes.3840x2160.mp4" type="video/mp4">
+            <source src="images/matrix_rain_codes.mp4" type="video/mp4">
                 Your browser does not support HTML5 video.
         </video>
         <!-- <img src="Übergang 1.png"> -->
