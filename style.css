@@ -247,7 +247,8 @@ div.examples_article{
     color: rgb(255, 255, 255);
     /* border: 1px solid rgb(224, 159, 129); */
     padding: 20px 40px 20px;
-    font-size: 1vw;
+    font-size: 16px;
+    height: 200vh;
 }
 div.examples_prod{
     /* background-color: #000000; */
@@ -260,7 +261,8 @@ div.examples_prod{
     color: rgb(255, 255, 255);
     /* border: 1px solid rgb(224, 159, 129); */
     padding: 20px 40px 20px;
-    font-size: 1vw;
+    font-size: 16px;
+    height: 200vh;
 }
 div.examples_forum{
     /* background-color: #000000; */
@@ -273,7 +275,9 @@ div.examples_forum{
     color: rgb(255, 255, 255);
     /* border: 1px solid rgb(224, 159, 129); */
     padding: 20px 40px 20px;
-    font-size: 1vw;
+    font-size: 16px;
+    overflow: hidden;
+    height: 200vh;
 }
 
 a.homepage_link:link, a.homepage_link:visited{
@@ -281,7 +285,7 @@ a.homepage_link:link, a.homepage_link:visited{
     width: 25vw;
     align-content: center;
     background-color: #000000;
-    font-size: 250%;
+    font-size: 2.5vi;
     border: 5px solid rgb(129, 224, 145);
     color: rgb(129, 224, 145);
     /* padding: 15px 35px; */
@@ -298,7 +302,7 @@ a.homepage_link:hover, a.homepage_link:active{
     width: 25vw;
     align-content: center;
     background-color: #000000;
-    font-size: 250%;
+    font-size: 2.55vi;
     border: 5px solid rgb(129, 224, 145);
     background-color: rgb(129, 224, 145);
     color: rgb(0, 0, 0);
@@ -373,17 +377,24 @@ div.homepage_forum_image{
 }
 p.forum_description{
 
-    font-size:180%;
+    font-size: 2.5vi;
     text-align: center;
     /* align-content: center; */
     height: 12.5vw;
 
     padding: none;
     margin: none;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    max-height: 5.5ch;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
 }
 p.forum_quotation{
 
-    font-size:400%; 
+    font-size: 5vi; 
     color: rgb(129, 224, 145);
     max-height:6.25vw;
 
@@ -396,16 +407,29 @@ div.random h1{
     font-size: 200%;
     height: 15vh;
     align-content: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    max-height: 5.5ch;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
 }
 div.random p.homepage_text{
     font-size: 120%;
-    height: 20vh;
+    /* height: 10vh; */
     align-content: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    max-height: 5.5ch;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
 }
 
 div.random p.homepage_price{
     font-size: 200%;
-    height: 3vh;
+    overflow: hidden;
+    height: 3ch;
     align-content: center;
     margin: none;
     padding: none;
@@ -447,7 +471,7 @@ a.homepage_link_direct:link, a.homepage_link_direct:visited{
     /* width: 25vw; */
     align-content: center;
     background-color: #000000;
-    font-size: 250%;
+    font-size: 2.5vi;
     border-top: 5px solid rgb(129, 224, 145);
     color: rgb(129, 224, 145);
     padding: auto;
@@ -465,7 +489,7 @@ a.homepage_link_direct:hover, a.homepage_link_direct:active{
     width: 80%;
     align-content: center;
     background-color: #000000;
-    font-size: 250%;
+    font-size: 2.55vi;
     border-top: 5px solid rgb(129, 224, 145);
     background-color: rgb(129, 224, 145);
     color: rgb(0, 0, 0);
