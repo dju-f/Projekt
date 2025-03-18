@@ -150,7 +150,7 @@
                 echo "<p class='homepage_author'>" . $row["forum_author"] . "</p>";
                 echo "<p class='homepage_forum_title'><strong>" . $row["forum_title"] . "</strong></p>";
                 echo "<p class='homepage_forum_text'>" . $row["forum_text"] . "</p>";
-                echo "<a href='forum.php' class='homepage_link_direct'><strong>Weitere Kommentare</strong></a>";
+                echo "<a href='forum_input.html' class='homepage_link_direct'><strong>Kommentieren</strong></a>";
                 echo "</div>";
                 echo "</div>";
             };
