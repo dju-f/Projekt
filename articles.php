@@ -19,7 +19,7 @@
         </div>
         <!-- Hier wird der Titel der Seite angezeigt. -->
         <h1 class="title">Web-Artikel</h1>
-<!-- Der PHP-Teil ist für das Herunterladen der Artikel aus der Datenbank und für das Anzeigen zuständig. -->
+<!-- Der PHP-Teil ist für das Herunterladen der Web-Artikel aus der Datenbank und für das Anzeigen zuständig. -->
 <?php
     // Zuerst wird die Verbindung zur Datenbank hergestellt.
     include("connection.php");
