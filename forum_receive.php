@@ -1,6 +1,6 @@
 <?php
 // Dieses Dokument empfängt die Inputs des Kommentarformulars und lädt sie in die Datenbank hoch.
-        // Hier werden die emfangenen Inputs aus dem $_POST-Array ausgelesen und in normale Variabeln umgewandelt.
+    // Hier werden die emfangenen Inputs aus dem $_POST-Array ausgelesen und in normale Variabeln umgewandelt.
     $author = $_POST["author"];
     $title = $_POST["title"];
     $text = $_POST["text"];
