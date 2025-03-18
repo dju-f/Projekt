@@ -25,8 +25,10 @@
          <div class="homepage_content">
             <div class="logo">
                 <!-- <div class="logo"> -->
-                    <strong>CONSPIRACY.WEB</strong>
-                </div>
+                    <p>
+                        <strong>CONSPIRACY.WEB</strong>
+                    </p>
+            </div>
     </body>
 </html>
 
