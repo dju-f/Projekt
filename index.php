@@ -17,6 +17,7 @@
                 <li><a class="navigation_bar" href="forum.php">FORUM</a></li>    
             </ul>
         </div>
+        <div class="fade"></div>
         <video autoplay muted loop id="matrix">
             <source src="matrix-rain-codes.3840x2160.mp4" type="video/mp4">
                 Your browser does not support HTML5 video.

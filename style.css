@@ -29,6 +29,14 @@ h1, h2, h3, h4, h5, h6, p, video{
     z-index: -1;
     object-fit: cover;
 }
+.fade{
+    background: linear-gradient( #000, rgba(0, 0, 0, 0));
+    /* margin-top: 597px; */
+    position: sticky;
+    top: 90px;
+    padding-top: 100px;
+    z-index: 5;
+}
 
 h1.article{
     font-size: 400%;
@@ -131,7 +139,7 @@ div.logo{
     background-color: rgba(0,0,0,0.8);
     width: 80vw;
     height: 25vh;
-    margin: 25.5vh auto 70vh;
+    margin: 19vh auto 70vh;
     text-align: center;
     display:grid;
     color: rgb(129, 224, 145);
@@ -139,6 +147,7 @@ div.logo{
     /* padding: 10vh auto 10vh; */
     font-size: 8vh;
     align-content: center;
+    overflow: clip;
 
 }
 /* div.logo p{
