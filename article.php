@@ -17,7 +17,7 @@
                 <li><a class="navigation_bar" href="forum.php">FORUM</a></li>    
             </ul> 
         </div>
-<!-- Der PHP-Teil ist für das Herunterladen der Web-Artikel aus der Datenbank und für das Anzeigen zuständig. -->
+<!-- Der PHP-Teil ist für das Herunterladen des Web-Artikels aus der Datenbank und für das Anzeigen zuständig. -->
 <?php
     // Hier wird die ID aus dem URL übertragen.
     $article_id = isset($_GET['id']) ?
